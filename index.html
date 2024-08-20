@@ -11,111 +11,116 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="main-page bg-primary-900">
-            <header class="fs-primary-heading">
-                <div class="container">
-                    <a href=""><img src="/images/logo.png" alt="JoseSolares"></a>
-                    <nav class="header-nav">
-                        <ul>
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Nosotros</a></li>
-                            <li><a href="">Contenido educativo</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
 
-            <main>
-                <section class="hero-main text-neutral-100">
-                    <div class="container">
-                        <div>
-                            <h1 class=" fs-primary-heading fw-primary-bold">
+        <section>
+            <div class="hero bg-primary-900">
+                <header class="primary-header">
+                    <div class="nav-wrapper">
+                        <a href=""><img  class="logo" src="/images/logo.png" alt="JoseSolares"></a>
+                        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                            <img src="icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
+                            <img src="icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
+                            <span class="visually-hidden">Menu</span>
+                        </button>
+                        <nav id="primary-navigation" class="primary-nav | fs-nav ">
+                            <ul role="list" class="nav-list">
+                                <li><a href="">Inicio</a></li>
+                                <li><a href="">Nosotros</a></li>
+                                <li><a href="">Contenido educativo</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+    
+                <section  class="text-neutral-100">
+                    <div class="hero-cta | padding-block-900">
+                        <div class="container hero-text">
+                            <h1 class=" fs-primary-heading fw-bold">
                                 Haz que cada rayo cuente
                             </h1>
                             <p>Ahorra de manera inteligente</p>
-                            <button class="button">Ver si calificas</button>
                         </div>
+                        <div class="container"><button class="primary-button">Pre-califica para la instalación</button></div>
                         
                     </div>    
-                </section>
-        </div>
+                </section>    
+            </div>
+        </section>    
 
-            <section class="info-cards bg-primary-900 text-neutral-100">
-                <div class="container">
-                    <h2 class="fs-secondary-heading fw-bold">
-                        ¿Por qué invertir en paneles solares?
-                    </h2>
-                    <div class="content-box">
-                        <div class="content-box-item">
-                            <h3>Ahorro de energia</h3>
-                            <p>Los paneles solares permiten generar tu propia electricidad, reduciendo drásticamente las facturas de energía y proporcionando ahorros sustanciales a lo largo del tiempo.</p>
-                        
-                        </div>
-                        <div class="content-box-item">
-                            <h3>Lorem ipsum</h3>
-                            <p>Al optar por energía solar, reduces tu huella de carbono y ayudas a combatir el cambio climático. Los paneles solares son una opción ecológica y sostenible, contribuyendo a un futuro más limpio.</p>
-                        </div>
-                        <div class="content-box-item">
-                            <h3>Protegete contra los incrementos</h3>
-                            <p>Generar tu propia electricidad disminuye la dependencia de las compañías eléctricas y sus tarifas variables. Obtienes mayor control sobre tus costos energéticos y protección contra aumentos futuros en los precios de la energía.</p>
-                        </div>
+        <section class="info-cards | padding-block-700 bg-primary-900 text-neutral-100">
+            <div class="container">
+                <h2 class="fs-secondary-heading fw-bold">
+                    ¿Por qué invertir en paneles solares?
+                </h2>
+                <div class="even-columns">
+                    <div class="content-box-item">
+                        <h3>Ahorro de energia</h3>
+                        <p>Los paneles solares permiten generar tu propia electricidad, reduciendo drásticamente las facturas de energía y proporcionando ahorros sustanciales a lo largo del tiempo.</p>
+                    
+                    </div>
+                    <div class="content-box-item">
+                        <h3>Lorem ipsum</h3>
+                        <p>Al optar por energía solar, reduces tu huella de carbono y ayudas a combatir el cambio climático. Los paneles solares son una opción ecológica y sostenible, contribuyendo a un futuro más limpio.</p>
+                    </div>
+                    <div class="content-box-item">
+                        <h3>Protegete contra los incrementos</h3>
+                        <p>Generar tu propia electricidad disminuye la dependencia de las compañías eléctricas y sus tarifas variables. Obtienes mayor control sobre tus costos energéticos y protección contra aumentos futuros en los precios de la energía.</p>
                     </div>
                 </div>
-            </section>
-            
-            <section class="bg-primary-900 text-neutral-100">
-                <div class="container">
-                    <h2 class="fs-secondary-heading">
-                        Proyectos
-                    </h2>
-                    //aca iria el carrusel
-                    <button class="button">
-                        Ver galeria
-                    </button>
-                </div>
-            </section>
-            
-            <section>
-                <div class="container even-columns"> 
-                    <div class="info-video">
-                        <video src="#" class="video"> </video>
-                    </div>
-                    <h3>QUIENES SOMOS</h3>
-                    <p>Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. </p>
-                    <button class="button"> Conoce mas</button>
-                </div>
-            </section>
-
-            <section class="text-neutral-100 bg-primary-900">
-                <div class="container title-box">
-                    <h3>
-                        ¿Por qué Nosotros? 
-                    </h3>
-                    <p>“Construyendo confianza, entregando resultados”</p>
-                </div>
-                <div class="container text-elements">
-                    <div class="text-box">
-                        <p>Con años de experiencia en energía solar, nuestro equipo de expertos ofrece soluciones a medidas adaptadas a tus necesidades. Nos comprometemos a proporcionar productos de alta calidad y durabilidad, utilizando tecnologías de vanguardia. Al elegirnos, contribuyes a un futuro sostenible y disfrutas de un servicio basado en la integridad y la transparencia, garantizando una relación duradera y de confianza.</p>
-                    </div>
-                    <div class="icon-1">
-                        <span></span>
-                        <p>Tenemos mas de 15 años de experiencia en la industria solar</p>
-                    </div>
-                    <div class="icon-2">
-                        <span></span>
-                        <p>Ayudamos alrededor de 170+ familias cada año</p>
-                    </div>
-                    <div class="icon-3">
-                        <span></span>
-                        <p>Instalamos 1+ Megawatt en energia solar anual</p>
-                    </div>
-                </div>
-            </section>
-
-
-        </main>    
+            </div>
+        </section>
         
-        <section>
+        <section class="padding-block-700 bg-primary-900 text-neutral-100">
+            <div class="container">
+                <h2 class="fs-secondary-heading">
+                    Proyectos
+                </h2>
+                //aca iria el carrusel
+                <button class="button">
+                    Ver galeria
+                </button>
+            </div>
+        </section>
+        
+        <section class="padding-block-700">
+            <div class="container even-columns"> 
+                <div class="info-video">
+                    <video src="#" class="video"> </video>
+                </div>
+                <h3>QUIENES SOMOS</h3>
+                <p>Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. </p>
+                <button class="button"> Conoce mas</button>
+            </div>
+        </section>
+
+        <section class=" padding-block-700 text-neutral-100 bg-primary-900">
+            <div class="container title-box">
+                <h3>
+                    ¿Por qué Nosotros? 
+                </h3>
+                <p>“Construyendo confianza, entregando resultados”</p>
+            </div>
+            <div class="container text-elements">
+                <div class="text-box">
+                    <p>Con años de experiencia en energía solar, nuestro equipo de expertos ofrece soluciones a medidas adaptadas a tus necesidades. Nos comprometemos a proporcionar productos de alta calidad y durabilidad, utilizando tecnologías de vanguardia. Al elegirnos, contribuyes a un futuro sostenible y disfrutas de un servicio basado en la integridad y la transparencia, garantizando una relación duradera y de confianza.</p>
+                </div>
+                <div class="icon-1">
+                    <span></span>
+                    <p>Tenemos mas de 15 años de experiencia en la industria solar</p>
+                </div>
+                <div class="icon-2">
+                    <span></span>
+                    <p>Ayudamos alrededor de 170+ familias cada año</p>
+                </div>
+                <div class="icon-3">
+                    <span></span>
+                    <p>Instalamos 1+ Megawatt en energia solar anual</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class=" padding-block-700">
             <div class="container">
                 <h2>NUESTROS CLIENTES</h2>
                 <div class="review-cards">
@@ -159,7 +164,7 @@
             </div>
         </section>
 
-        <section class="bg-primary-900 text-neutral-100">
+        <section class="padding-block-700 bg-primary-900 text-neutral-100">
             <div class="container">
                 <h2 class="fs-secondary-heading">
                     Nuestro negocio no es vender paneles solares, sino ayudar a nuestro cliente a tomar la decisión perfecta.
@@ -167,7 +172,7 @@
             </div>    
         </section>
 
-        <section>
+        <section class="padding-block-700">
             <div class="container">
                 <h2 class="secondary-heading text-accent-100">Novedades</h2>
                 <div class="even-columns ">
@@ -209,7 +214,7 @@
             </div>
         </section>
 
-        <section class="bg-primary-900">
+        <section class="padding-block-700 bg-primary-900">
             <h2>CONTÁCTANOS</h2>
             <div class="even-columns">
                 <div class="bg-accent-100">Para consultas o reuniones escribinos al:
@@ -244,7 +249,7 @@
             </div>
         </section>
 
-        <footer class="footer bg-accent-100">
+        <footer class="footer | padding-block-700  bg-accent-100">
             <div class="even-columns">
                 <div>
                     <img src="" alt="">
