@@ -71,6 +71,7 @@
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
+  text-decoration: none;
   list-style: none;
 }
 
@@ -128,6 +129,221 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+
+
+.container {
+  --max-width: 1200px;
+  margin-inline: auto;
+  align-items: center;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+
+}
+
+.hero {
+
+  width: 100%;
+  height: 90vh;
+  background: url(/images/bg-sunset.png) no-repeat;
+  background-size: cover; 
+  
+
+}
+
+.hero-cta {
+  padding-top: 12.5%;
+  place-content: center;
+  text-align: center;
+}
+
+
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+} 
+
+
+@media (min-width:50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 22.5vw;
+  max-width: 130px;
+}
+
+.hero-text{
+  padding-bottom: 1rem;
+}
+
+.primary-button {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-button);
+  text-decoration: none;
+  
+  border: 3px solid var(--clr-primary-300); 
+  color: var(--clr-primary-300);
+  border-radius: 100vmax;
+  background-color: transparent;
+  
+
+  transition: 
+    background-color 0.5s ease, 
+    color 0.5s ease, 
+    border-color 0.5s ease,
+    transform 0.3s ease; 
+}
+
+.primary-button:hover,
+.primary-button:focus-visible {
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-primary-300);
+  color: var(--clr-primary-900);
+  border-color: transparent; 
+  transform: scale(1.05); 
+}
+
+.primary-header {
+  padding-top: var(--size-500);
+}
+
+.nav-wrapper {
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline; 
+  color: var(--clr-primary-300); 
+}
+
+.nav-list {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-nav);
+}
+
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; 
+  background-color: var(--clr-primary-300); 
+  transition: width 0.3s ease; 
+}
+
+.nav-list a:hover::after,
+.nav-list a:focus::after {
+  width: 100%;
+}
+
+
+
+.nav-list {
+  display: flex;
+  gap: clamp(var(--size-300), 15vw, var(--size-800))
+}  
+
+
+
+@media (max-width: 50em) {
+  .primary-nav {
+    display: none;
+
+    position: absolute;
+    padding: var(--size-600);
+    max-width: 25rem;
+    margin-left: auto;
+    inset: 7rem var(--size-400) auto;
+    background-color: var(--clr-primary-900);
+    border-radius: var(--size-100);
+    box-shadow: 0 0 0.5em rgb(0, 0, 0, 0.20);
+  }
+
+  .primary-header[data-overlay]::before {
+    content: " ";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(transparent , black);
+  }
+
+  .primary-nav[data-visible] {
+    display: block;
+  }
+
+  .nav-list {
+    color: var(--clr-accent-100);
+    display: grid;
+    gap: var(--size-600);
+    text-align: center;
+    font-weight: var(--fw-semi-bold);
+  }
+
+  .nav-list a {
+    text-decoration: none;
+  }
+
+  .nav-list a:focus,
+  .nav-list a:hover {
+    color: var(--clr-primary-300);
+    text-decoration: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    right: var(--size-100);
+    padding: 0.5em;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  
+  .mobile-nav-toggle .close-icon {
+    display: none;
+  }
+  
+  .logo {
+    padding-left: var(--size-400);
+  }
+
+ 
+}
+
 
 /*utility classes*/
 
@@ -217,158 +433,4 @@ border: 0 !important;
 .padding-block-700 {
   padding-block: var(--size-700);
 }
-
-
-.hero {
-  width: 100%;
-  height: 90vh;
-  background: url(/images/bg-sunset.png) no-repeat;
-  background-size: cover !important; 
-  
-
-}
-
-.hero-cta {
-  padding-top: 12.5%;
-  place-content: center;
-  text-align: center;
-}
-
-
-
-.container {
-  --max-width: 1200px;
-  --padding: 1rem;
-  margin-inline: auto;
-
-  width: min(var(--max-width, 100% - (var(--padding) * 2)));
-
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-} 
-
-@media (min-width:50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
-
-.hero-text{
-  padding-bottom: 1rem;
-}
-
-.primary-button {
-  
-  cursor: pointer;
-  padding: .5em 1em;
-  font-weight: var(--fw-semi-bold);
-  font-size: var(--fs-button);
-  text-decoration: none;
-
-  border: 3px solid;
-  color: var(--clr-primary-300);
-  border-radius: 100vmax;
-  background-color: transparent;
-  transition: background-color 0.5s, color 0.5s;
-}
-
-.primary-button:hover,
-.primary-button:focus-visible {
-
-  border: 3px solid transparent;
-  background-color: var(--clr-primary-300);
-  color: var(--clr-primary-900);
-}
-
-/* navigation */
-
-.primary-header {
-  padding-top: var(--size-500);
-}
-
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.mobile-nav-toggle {
-  display: none;
-}
-
-.nav-list {
-  font-size: var(--fs-nav);
-}
-
-
-@media (max-width: 50em) {
-  .primary-nav {
-    display: none;
-
-    position: absolute;
-    padding: var(--size-600);
-    inset: 7rem var(--size-400) auto;
-    background-color: var(--clr-neutral-100);
-    border-radius: var(--size-100);
-    box-shadow: 0 0 0.5em rgb(0, 0, 0, 0.20);
-  }
-
-  .primary-header[data-overlay]::before {
-    content: " ";
-    position: fixed;
-    inset: 0;
-    background: linear-gradient(transparent , black);
-  }
-
-  .primary-nav[data-visible] {
-    display: block;
-  }
-
-  .nav-list {
-    display: grid;
-    gap: var(--size-600);
-    text-align: center;
-    font-weight: var(--fw-semi-bold);
-  }
-
-  .nav-list a {
-    text-decoration: none;
-  }
-
-  .nav-list a:focus,
-  .nav-list a:hover {
-    color: var(--clr-primary-900);
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-    position: absolute;
-
-    right: var(--size-100);
-    padding: 0.5em;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-  }
-  
-  .mobile-nav-toggle .close-icon {
-    display: none;
-  }
-  
-  .logo {
-    padding-left: var(--size-400);
-  }
-
- 
-}
-
-.primary-nav[data-visible] {
-  display: block;
-}
-
-
 
