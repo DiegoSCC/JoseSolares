@@ -48,22 +48,22 @@
             </div>
         </section>    
 
-        <section class="info-cards | padding-block-700 bg-primary-900 text-neutral-100">
-            <div class="container">
+        <section class="padding-block-300 bg-primary-900 text-neutral-100">
+            <div class="info-cards container">
                 <h2 class="fs-secondary-heading fw-bold">
                     ¿Por qué invertir en paneles solares?
                 </h2>
-                <div class="even-columns">
-                    <div class="content-box-item">
+                <div class="content-box | even-columns">
+                    <div class="content-box-item first">
                         <h3>Ahorro de energia</h3>
                         <p>Los paneles solares permiten generar tu propia electricidad, reduciendo drásticamente las facturas de energía y proporcionando ahorros sustanciales a lo largo del tiempo.</p>
                     
                     </div>
-                    <div class="content-box-item">
-                        <h3>Lorem ipsum</h3>
+                    <div class="content-box-item 2">
+                        <h3>Resiliencia energética</h3>
                         <p>Al optar por energía solar, reduces tu huella de carbono y ayudas a combatir el cambio climático. Los paneles solares son una opción ecológica y sostenible, contribuyendo a un futuro más limpio.</p>
                     </div>
-                    <div class="content-box-item">
+                    <div class="content-box-item 3">
                         <h3>Protegete contra los incrementos</h3>
                         <p>Generar tu propia electricidad disminuye la dependencia de las compañías eléctricas y sus tarifas variables. Obtienes mayor control sobre tus costos energéticos y protección contra aumentos futuros en los precios de la energía.</p>
                     </div>
@@ -72,14 +72,39 @@
         </section>
         
         <section class="padding-block-700 bg-primary-900 text-neutral-100">
-            <div class="container">
-                <h2 class="fs-secondary-heading">
-                    Proyectos
-                </h2>
-                //aca iria el carrusel
-                <button class="button">
-                    Ver galeria
-                </button>
+            <div class="carrousel-wrapper container">  
+                <div class="carousel">
+                    <div class="carousel-button cr-tr-container-left">
+                        <img src="/icons/prev.svg" alt="Previous">
+                    </div>
+                    <div class="carousel-track-container ">
+                        <ul role="list" class="carousel-track">
+                            <li class="carousel-slide">
+                                <img class="carousel-img" src="images/bg-sunset-smaller.png" alt="">
+                            </li>
+                            <li class="carousel-slide">
+                                <img class="carousel-img" src="images/bg-sunset-smaller.png" alt="">
+                            </li>
+                            <li class="carousel-slide">
+                                <img class="carousel-img" src="images/bg-sunset-smaller.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="carousel-button cr-tr-container-right">
+                        <img src="/icons/next.svg" alt="next">
+                    </div>
+
+                    <div class="carousel-nav">
+                        <button class="carousel-indicator"></button>
+                        <button class="carousel-indicator"></button>
+                        <button class="carousel-indicator"></button>
+                    </div>
+                </div>
+                <span class="flex-container">
+                    <button class="carousel-link primary-button">
+                        Ver galeria
+                    </button>
+                </span>    
             </div>
         </section>
         
