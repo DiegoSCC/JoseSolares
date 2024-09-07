@@ -16,10 +16,10 @@
             <div class="hero bg-primary-900">
                 <header class="primary-header">
                     <div class="nav-wrapper">
-                        <a href=""><img  class="logo" src="/images/logo.svg" alt="JoseSolares"></a>
+                        <a href=""><img  class="logo" src="media/images/logo.svg" alt="JoseSolares"></a>
                         <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                            <img src="icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
-                            <img src="icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
+                            <img src="media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
+                            <img src="media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
                             <span class="visually-hidden">Menu</span>
                         </button>
                         <nav id="primary-navigation" class="primary-nav | fs-nav ">
@@ -50,7 +50,7 @@
 
         <section class="padding-block-300 bg-primary-900 text-neutral-100">
             <div class="info-cards container">
-                <h2 class="fs-secondary-heading fw-bold">
+                <h2 class=" fs-secondary-heading padding-block-200 fw-bold">
                     ¿Por qué invertir en paneles solares?
                 </h2>
                 <div class="content-box | even-columns">
@@ -72,79 +72,85 @@
         </section>
         
         <section class="padding-block-700 bg-primary-900 text-neutral-100">
-            <div class="carrousel-wrapper container">  
+            <div class="carousel-wrapper container">  
                 <div class="carousel">
-                    <div class="carousel-button cr-tr-container-left">
-                        <img src="/icons/prev.svg" alt="Previous">
+                    <div class="carousel-images">
+                      <img src="/media/images/bg-sunset-smaller.png" alt="Image 1" class="active">
+                      <img src="/media/images/bg-sunset-smaller.png" alt="Image 2">
+                      <img src="/media/images/bg-sunset-smaller.png" alt="Image 3">
                     </div>
-                    <div class="carousel-track-container ">
-                        <ul role="list" class="carousel-track">
-                            <li class="carousel-slide">
-                                <img class="carousel-img" src="images/bg-sunset-smaller.png" alt="">
-                            </li>
-                            <li class="carousel-slide">
-                                <img class="carousel-img" src="images/bg-sunset-smaller.png" alt="">
-                            </li>
-                            <li class="carousel-slide">
-                                <img class="carousel-img" src="images/bg-sunset-smaller.png" alt="">
-                            </li>
-                        </ul>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                    <div class="dots">
+                      <span class="dot" onclick="goToSlide(0)"></span>
+                      <span class="dot" onclick="goToSlide(1)"></span>
+                      <span class="dot" onclick="goToSlide(2)"></span>
                     </div>
-                    <div class="carousel-button cr-tr-container-right">
-                        <img src="/icons/next.svg" alt="next">
-                    </div>
-
-                    <div class="carousel-nav">
-                        <button class="carousel-indicator"></button>
-                        <button class="carousel-indicator"></button>
-                        <button class="carousel-indicator"></button>
-                    </div>
-                </div>
-                <span class="flex-container">
-                    <button class="carousel-link primary-button">
-                        Ver galeria
-                    </button>
-                </span>    
+                  </div>                      
             </div>
         </section>
         
-        <section class="padding-block-700">
-            <div class="container even-columns"> 
+        <section class="info-video-wrapper | container padding-block-700">
+            <div class="even-columns"> 
                 <div class="info-video">
-                    <video src="#" class="video"> </video>
+                    <video src="/media/videos/placeholder.mp4" class="video"> </video>
                 </div>
-                <h3>QUIENES SOMOS</h3>
-                <p>Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. </p>
-                <button class="button"> Conoce mas</button>
+                <div class="info-video-text">
+                    <h3 class="fw-bold">QUIENES <span class="inline-title">SOMOS</span> </h3>
+                    <p>
+                        Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. 
+                    </p>
+                    <div class="container-button">
+                        <button class="info-video-button | secondary-button ">Conoce mas</button>
+                    </div>
+                </div>    
             </div>
         </section>
 
-        <section class=" padding-block-700 text-neutral-100 bg-primary-900">
-            <div class="container title-box">
-                <h3>
-                    ¿Por qué Nosotros? 
-                </h3>
-                <p>“Construyendo confianza, entregando resultados”</p>
+        <section class="why-us-section | pointed-section container">
+            <h2>¿Por qué <span>Nosotros?</span></h2>
+            <p class="subtitle">"Construyendo confianza, entregando resultados"</p>
+            <p class="description">
+              Con años de experiencia, nuestro equipo ofrece soluciones solares adaptadas a tus necesidades. Proporcionamos productos de alta calidad con tecnología avanzada, promoviendo un futuro sostenible y un servicio basado en integridad y transparencia.
+            </p>
+            <div class="why-us-cards container">
+                <div class="card">
+                    <img src="media/icons/handshake.svg" alt="Handshake Icon">
+                </div>
+                
+                <div class="card">
+                    <img src="media/icons/experience.svg" alt="Experience Icon">
+                </div>
+                
+                <div class="card">
+                    <img src="media/icons/megawatt.svg" alt="Megawatt Icon">
+                </div>
+                
+                <p>Ayudamos alrededor de +170 familias cada año</p>
+                <p>Tenemos más de 15 años de experiencia en la industria solar</p>
+                <p>Instalamos +1 Megawatt en energía solar anual</p>
             </div>
-            <div class="container text-elements">
-                <div class="text-box">
-                    <p>Con años de experiencia en energía solar, nuestro equipo de expertos ofrece soluciones a medidas adaptadas a tus necesidades. Nos comprometemos a proporcionar productos de alta calidad y durabilidad, utilizando tecnologías de vanguardia. Al elegirnos, contribuyes a un futuro sostenible y disfrutas de un servicio basado en la integridad y la transparencia, garantizando una relación duradera y de confianza.</p>
+          </section>
+
+          <section class="info-video-wrapper | container padding-block-700">
+            <div class="even-columns"> 
+                <div class="info-video">
+                    <video src="/media/videos/placeholder.mp4" class="video"> </video>
                 </div>
-                <div class="icon-1">
-                    <span></span>
-                    <p>Tenemos mas de 15 años de experiencia en la industria solar</p>
-                </div>
-                <div class="icon-2">
-                    <span></span>
-                    <p>Ayudamos alrededor de 170+ familias cada año</p>
-                </div>
-                <div class="icon-3">
-                    <span></span>
-                    <p>Instalamos 1+ Megawatt en energia solar anual</p>
-                </div>
+                <div class="info-video-text">
+                    <h3 class="fw-bold">DISEÑA TU <span class="inline-title">PROPIO</span> PROYECTO </h3>
+                    <p>
+                        Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. 
+                    </p>
+                    <div class="container-button">
+                        <button class="info-video-button | secondary-button ">Conoce mas</button>
+                    </div>
+                </div>    
             </div>
         </section>
-        
+          
+          
+          
         <section class=" padding-block-700">
             <div class="container">
                 <h2>NUESTROS CLIENTES</h2>
@@ -198,27 +204,6 @@
         </section>
 
         <section class="padding-block-700">
-            <div class="container">
-                <h2 class="secondary-heading text-accent-100">Novedades</h2>
-                <div class="even-columns ">
-                    <div class="text-box">
-                        <h3>Reducción en los costos de los paneles solares</h3>
-                        <p>La concientización ambiental, los programas de estimulación económica impuestas por los distintos org...</p>
-
-                            <p>26 marzo, 2024</p>
-                    </div>
-                    <div class="text-box">
-                        <h3>IMPORTANCIA DE PROTEGER AL MEDIO AMBIENTE</h3>
-                        <p>En un mundo donde la sostenibilidad y la eficiencia económica son cada vez más importantes, la energía solar emerge como una solución clave para reduc...</p>
-
-                        <p>15 junio, 2024</p>
-                    </div>
-                    <div class="text-box">
-                        <h3>FUTURO SOSTENIBLE Y EL PAPEL VITAL DE LA ENERGIA SOLAR</h3>
-                        <p>En un mundo cada vez más consciente de los desafíos ambientales y la necesidad de un desarrollo sostenible, la energía solar emerge ...</p>
-                        <p>29 diciembre, 2023</p>
-                    </div>
-                </div>
                 <div class="cta text-neutral-100 bg-primary-900">
                     <div class="even-columns">
                         <img src="" alt="">
