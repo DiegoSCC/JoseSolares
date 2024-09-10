@@ -185,6 +185,7 @@ select {
 }
 
 .header {
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -233,8 +234,7 @@ select {
   font-weight: var(--fw-semi-bold);
   font-size: var(--fs-button);
   text-decoration: none;
-  
-  border: 2px solid var(--clr-primary-900); /* Darker border for better contrast */
+  border: 1px solid var(--clr-accent-100);
   color: var(--clr-primary-900); /* Darker text color */
   background-color: var(--clr-accent-100);
   
@@ -242,7 +242,7 @@ select {
     background-color 0.5s ease, 
     color 0.5s ease, 
     border-color 0.5s ease,
-    transform 0.3s ease; 
+    transform 0.3s ease;  
 }
 
 .secondary-button:hover,
@@ -250,13 +250,13 @@ select {
   font-weight: var(--fw-bold);
   background-color: var(--clr-primary-900); /* Darker background color */
   color: var(--clr-accent-100); /* White text on hover for better contrast */
-  border-color: transparent; 
   transform: scale(1.05); 
 }
 
 
 .nav-wrapper {
-  margin: 1.5rem;
+  border-top: 2px solid var(--clr-primary-300);
+  padding: 1.5rem;
 
   display: flex;
   align-items: center;
@@ -541,6 +541,8 @@ select {
   display: flex;
   width: 80%;
   justify-content: center;
+  position:relative;
+  z-index: 0;
 }
 
 .info-image{
@@ -548,12 +550,24 @@ select {
   justify-content: center;
 }
 
+.proj-img{
+  position: relative;
+  z-index: 1;
+}
+
+.info-image {
+  z-index: 1;
+}
+
+
 .info-image img{
   width: 80%;
-  height: auto;
+  max-height: 300px;
+  padding-bottom: 2rem;
 }
 
 .video {
+  z-index: 1;
   width: 100%;
   max-width: 500px;
   height: auto;
@@ -756,8 +770,6 @@ select {
     flex-grow: 1;
     padding: 1rem 2rem;
     width: 100%;
-    margin: auto;
-    margin-bottom: 5em;
     border-radius: 0.5em;
     border: 4px solid var(--clr-primary-300);
     position: relative;
@@ -781,7 +793,6 @@ select {
   flex-grow: 1;
   padding: 1rem 2rem;
   margin: auto;
-  margin-bottom: 5em;
   border-radius: 0.5em;
   border: 4px solid var(--clr-primary-300);
   position: relative;
@@ -891,6 +902,7 @@ select {
   display: grid;
   padding: var(--padding-general);
   align-items: center;
+  z-index: 0;
 }
 
 .contact-form h2{
@@ -925,7 +937,7 @@ select {
     left: -20px;   /* Adjust this to set how far the square is offset */
     width: 100%;  /* Size of the square */
     height: 100%; /* Same as width to make it a square */
-    border: 2px solid var(--clr-primary-300);
+    border: 4px solid var(--clr-primary-300);
     z-index: 1; /* Behind the media element */
 }
 
