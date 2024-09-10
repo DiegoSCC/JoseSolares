@@ -1,24 +1,47 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+let currentIndex = 0;
+const images = document.querySelectorAll('.carousel img');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = images.length;
+let autoplayInterval = 6000; // 3 seconds
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+function showSlide(index) {
+  images.forEach((img, i) => {
+    img.classList.remove('active');
+    if (i === index) {
+      img.classList.add('active');
+    }
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.remove('active');
+    if (i === index) {
+      dot.classList.add('active');
+    }
+  });
+}
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
+}
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(currentIndex);
+}
+
+function goToSlide(index) {
+  currentIndex = index;
+  showSlide(currentIndex);
+}
+
+function startAutoplay() {
+  setInterval(nextSlide, autoplayInterval);
+}
+
+// Initialize the first slide and start autoplay
+showSlide(currentIndex);
+startAutoplay();
+
 
 const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");

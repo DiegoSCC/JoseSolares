@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
 
@@ -71,23 +72,8 @@
             </div>
         </section>
         
-        <section class="bg-primary-900 text-neutral-100">
-            <div class="carousel-wrapper ">  
-                <div class="carousel">
-                    <div class="carousel-images">
-                      <img src="/media/images/foto-carrusel-inicio.png" alt="Image 1" class="active">
-                      <img src="./media/images/Foto Carrusel 2 Inicio.png" alt="Image 2">
-                      <img src="./media/images/Foto Carrusel 3 Inicio.png" alt="Image 3">
-                    </div>
-                    <button class="prev" onclick="prevSlide()">&#10094;</button>
-                    <button class="next" onclick="nextSlide()">&#10095;</button>
-                    <div class="dots">
-                      <span class="dot" onclick="goToSlide(0)"></span>
-                      <span class="dot" onclick="goToSlide(1)"></span>
-                      <span class="dot" onclick="goToSlide(2)"></span>
-                    </div>
-                  </div>                      
-            </div>
+        <section class="padding-block-700 bg-primary-900 text-neutral-100">
+            
         </section>
         
         <section class="info-video-wrapper | container padding-block-700">
@@ -248,7 +234,9 @@
                         <input id="name" type="text" name="name" placeholder="Ej. Jose Castro" required />
                     </div>
                     <div>
-                        <label for="message"></span></label>
+                        <label for="message">
+                            <img class="carousel-img" src=".media/images/" alt="">
+                        </span></label>
                         <input id="message" type="text" name="message" placeholder="Dejanos un mensaje!"/>
                     </div>
                     <p>
@@ -289,9 +277,6 @@
         
 
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="main.js" async defer></script>
     </body>
 </html>

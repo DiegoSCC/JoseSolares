@@ -442,6 +442,80 @@ select {
 /* Carrousel */
 
 
+.carousel {
+  display: flex;
+  align-content: center;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  padding: var(--padding-general);
+}
+
+.carousel-images {
+  display: flex;
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+}
+
+.carousel img.active {
+  width: 90vw;
+  height: auto;
+  display: flex;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--clr-primary-300);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 7%;
+}
+
+.next {
+  right: 7%;
+}
+
+.dots {
+  text-align: center;
+  position: relative;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+}
+
+.dot {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 5px;
+  background-color: #bbb;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  transition: height 0.3s ease-out;
+  height: 15px;
+  background-color: var(--clr-primary-300);
+}
 
 
 /* Quienes somos */
