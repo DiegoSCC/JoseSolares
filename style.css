@@ -770,6 +770,10 @@ select {
 
 
 
+.title{
+  text-decoration: underline var(--clr-primary-300);
+}
+
 .reviews{
   text-align: center;
 }
@@ -962,7 +966,6 @@ select {
 }
 
 .contact-banner{ 
-  z-index: 1;
   font-size: 17px;
   text-align: center;
   display: flex;
