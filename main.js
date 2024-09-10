@@ -42,6 +42,29 @@ function startAutoplay() {
 showSlide(currentIndex);
 startAutoplay();
 
+AOS.init();
+
+
+  // Select the video element
+  const video = document.getElementById('video');
+
+  // Set up the IntersectionObserver
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // If the video is in the viewport, play the video
+        video.play();
+      } else {
+        // If the video is out of the viewport, pause the video
+        video.pause();
+      }
+    });
+  });
+
+  // Observe the video element
+  observer.observe(video);
+
+
 
 const primaryHeader = document.querySelector(".primary-header");
 const navToggle = document.querySelector(".mobile-nav-toggle");

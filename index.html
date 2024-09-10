@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     </head>
     <body>
 
@@ -24,9 +26,11 @@
                         </button>
                         <nav id="primary-navigation" class="primary-nav | fs-nav ">
                             <ul role="list" class="nav-list">
-                                <li><a href="">Inicio</a></li>
-                                <li><a href="">Nosotros</a></li>
-                                <li><a href="">Contenido educativo</a></li>
+                                <li><a href="">INICIO</a></li>
+                                <li><a href="">NOSOTROS</a></li>
+                                <li><a href="">INFORMACION</a></li>
+                                <li><a href="">TU PROYECTO</a></li>
+                                <li><img src="./media/icons/globe-outline.svg" alt=""></li>
                             </ul>
                         </nav>
                     </div>
@@ -91,9 +95,13 @@
         </section>
         
         <section class="info-video-wrapper | container padding-block-700">
-            <div class="even-columns"> 
+            <div class="info-video-columns"> 
                 <div class="info-video">
-                    <video src="/media/videos/placeholder.mp4" class="video"> </video>
+                    <video id="video" class="video" preload="auto" controls muted>
+                        <source id="mp4" src="./media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
+        
+                        <p>Error: This browser does not support html5 video!</p>
+                    </video>
                 </div>
                 <div class="info-video-text">
                     <h3 class="fw-bold">QUIENES <span class="inline-title">SOMOS</span> </h3>
@@ -133,159 +141,183 @@
           </section>
 
           <section class="info-video-wrapper | container padding-block-700">
-            <div class="even-columns"> 
-                <div class="info-video">
-                    <video src="/media/videos/placeholder.mp4" class="video"> </video>
+            <div class="info-video-columns"> 
+                <div class="info-image">
+                   <img src="./media/images/Foto diseña tu propio proyecto Inicio.jpg" alt="">
                 </div>
                 <div class="info-video-text">
                     <h3 class="fw-bold">DISEÑA TU <span class="inline-title">PROPIO</span> PROYECTO </h3>
-                    <p>
-                        Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. 
+                    <p class="fw-semibold">
+                        Rellena un breve formulario para que podamos conocer mejor tus necesidades y objetivos energéticos. Nuestros expertos analizarán tus respuestas y te enviarán una propuesta personalizada, maximizando los beneficios de tu sistema de energía solar desde el principio. 
                     </p>
                     <div class="container-button">
-                        <button class="info-video-button | secondary-button ">Conoce mas</button>
+                        <button class="info-image-button | secondary-button ">Diseña aqui</button>
                     </div>
                 </div>    
             </div>
         </section>
           
-          
-          
-        <section class=" padding-block-700">
-            <div class="container">
-                <h2>NUESTROS CLIENTES</h2>
-                <div class="review-cards">
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                    <div class="review-box">
-                        <p></p>
-                    </div>
-                </div>    
-            </div>
-        </section>
-
-        <section class="padding-block-700 bg-primary-900 text-neutral-100">
-            <div class="container">
-                <h2 class="fs-secondary-heading">
-                    Nuestro negocio no es vender paneles solares, sino ayudar a nuestro cliente a tomar la decisión perfecta.
+        <section class=" decoration-home padding-block-700 bg-primary-900 text-neutral-100">
+            <div class="text-container">
+                <h2 class="fs-secondary-heading fw-bold">
+                    <i>Nuestro negocio no es vender paneles solares, sino ayudar a nuestro cliente a tomar la decisión perfecta.</i>
                 </h2>
             </div>    
+        </section>    
+          
+        <section id="reviews" class="padding-block-700">
+            <div class="reviews container">
+                <h2 class="fs-secondary-heading">NUESTROS CLIENTES</h2>
+                <div class="review-cards">
+                    <div class="review-box">
+                        <div class="star-group">
+                            <picture class="pfp">
+                                <img src="./media/images/profile-woman.svg" width="80" height="80" alt="Profile picture">
+                                
+                                <picture>
+                                    <p class="name">Sylvia Lara</p>
+                                    <img aria-hidden="true" loading="lazy" decoding="async" src="./media/icons/stars.svg" alt="stars" width="91" height="15">
+                                </picture>
+                            </picture>
+
+                            
+                        </div>
+                
+                        <p>José Castro fue el mejor en responder todas mis preguntas y evitó que alguien intentara estafarme para que alquilara y no comprara mi sistema solar. Necesitamos más personas honestas como él. ¡Gracias por toda su ayuda, la aprecio mucho!</p>
+                        <img src="/media/images/icons8-logo-de-google-48.png" width="30" height="30" alt="">
+                    </div>
+                    <div class="review-box">
+                        <div class="star-group">
+                            <picture class="pfp">
+                                <img src="./media/images/profile-woman.svg" width="80" height="80" alt="Profile picture">
+                                
+                                <picture>
+                                    <p class="name">Danielle Miramontes</p>
+                                    <img aria-hidden="true" loading="lazy" decoding="async" src="./media/icons/stars.svg" alt="stars" width="91" height="15">
+                                </picture>
+                            </picture>
+
+                            
+                        </div>
+                
+                        <p>Me gustaría reconocer a José, quien me salvó de contratar a otra empresa de energía solar. Es rápido y eficiente, me acompaño en cada paso del proceso. Excelente servicio al cliente y confiable. No solo le doy una excelente reseña, sino que también le doy un 199 %. Me dio la tranquilidad de poder hacerle 101 preguntas... su negocio es increíble.</p>
+                        <img src="/media/images/icons8-logo-de-google-48.png" width="30" height="30" alt="">
+                    </div>
+                    <div class="review-box">
+                        <div class="star-group">
+                            <picture class="pfp">
+                                <img src="./media/images/profile-woman.svg" width="80" height="80" alt="Profile picture">
+                                
+                                <picture>
+                                    <p class="name">Carolina Cisneros</p>
+                                    <img aria-hidden="true" loading="lazy" decoding="async" src="./media/icons/stars.svg" alt="stars" width="91" height="15">
+                                </picture>
+                            </picture>
+
+                            
+                        </div>
+                
+                        <p>José Castro es mi representante, estoy muy contento con su desempeño, gran servicio, siempre presente y rápido para responder todas mis preguntas a mi entera satisfacción. Mi experiencia con Solar fue fácil y rápida, seguramente lo recomendaré a todos mis amigos y familiares. ¡Buen trabajo! @Jose gracias por toda tu ayuda y apoyo.</p>
+                        <img src="/media/images/icons8-logo-de-google-48.png" width="30" height="30" alt="">
+                    </div>
+                </div>    
+            </div>
         </section>
 
-        <section class="padding-block-700">
-                <div class="cta text-neutral-100 bg-primary-900">
-                    <div class="even-columns">
-                        <img src="" alt="">
+       
+
+        <section class="cta-section padding-block-700">
+                <div class="cta-container text-neutral-100 bg-primary-900">
+                    <div class="cta-columns">
+                        <img class="book-img" src="./media/images/libro.png" height="250" alt="">
                         <div class="text-box">
-                            <h2 class="fs-300">
+                            <h2>
                                 No compres paneles sin primero leer nuestro libro
+                                <p class="fs-300">
+                                    Libro educativo sobre paneles solares
+                                </p>
                             </h2>
-                            <p>
-                                Libro educativo sobre paneles solares
-                            </p>
-                            <p>
+                            
+                            <p style="padding-top: 0.5rem;">
                                 Cargando tus datos te enviamos nuestro libro gratis sin costo. 
                             </p>
                         </div>
-                        <button class="secondary-button">Descarga aqui</button>
+                       <div><button class="primary-button">Descarga aqui</button> </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
 
-        <section class="padding-block-700 bg-primary-900">
+        <section class="contact-form padding-block-700 bg-primary-900">
             <h2>CONTÁCTANOS</h2>
             <div class="even-columns">
-                <div class="bg-accent-100">Para consultas o reuniones escribinos al:
-                    <div>
-                        <img src="" alt="">
+                <div class="contact-banner">
+                    <div class="offset-sq"></div>
+                    <p>Para consultas o reuniones escribinos al:</p>     
+                    <div class="banner-icons">
+                        <img src="media/icons/phone-portrait-outline.svg"  height="20">
                         <p>+(909) 697-6932</p>
-                    </div>
-                
-                    <div>
-                        <img src="" alt="">
+                        <img src="media/icons/mail-outline.svg" width="20"  alt="">
                         <p>jlcastrore@gmail.com</p>
                     </div>
-                </div>
+                </div>     
                 <form class="form">
-                    <div>
+                    <div class="email">
                         <label for="email"><span aria-label="required"></span></label>
                         <input id="email" type="text" name="email" placeholder="Ej. josecastro@email.com" required />
                     </div>
-                    <div>
+                    <div class="name">
                         <label for="name"><span aria-label="required"></span></label>
                         <input id="name" type="text" name="name" placeholder="Ej. Jose Castro" required />
                     </div>
-                    <div>
+                </form>
+                <form class="form">    
+                    <div class="message">
                         <label for="message"></span></label>
                         <input id="message" type="text" name="message" placeholder="Dejanos un mensaje!"/>
                     </div>
                     <p>
-                        <button class="button" type="submit">Enviar</button>
+                        <button class="primary-button" type="submit">Enviar</button>
                       </p>
                 </form>
 
             </div>
         </section>
 
-        <footer class="footer | padding-block-700  bg-accent-100">
-            <div class="even-columns">
-                <div>
-                    <img src="" alt="">
-                    <p>Convertimos la luz solar en energía eficiente y rentable para tu hogar.</p>
+        <footer class="footer |  ">
+            <div class="footer-container">
+                <div class="footer-columns">
+                    <div>
+                        <h3 class="fs-secondary-heading fw-bold">JoseSolares </h3>
+                        <p>Convertimos la luz solar en energía eficiente y rentable para tu hogar.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <h3 class="fw-bold">
+                            Contacto
+                        </h3>
+                        <p>+(909) 697-6932</p>
+                        <p>jlcastrore@gmail.com</p>
+                    </div>
+                    <div class="list-container">
+                        <p>Acceso</p>
+                        <ul class="footer-list">
+                            <li><a href=""></a>Preguntas Frecuentes</li>
+                            <li><a href=""></a>Contenido Educativo</li>
+                            <li><a href=""></a>Nosotros</li>
+                        </ul>    
+                    </div>    
                 </div>
-                <div>
-                    <h3>
-                        Contacto
-                    </h3>
-                    <p>+(909) 697-6932</p>
-                    <p>jlcastrore@gmail.com</p>
-                </div>
-                <ul>Acceso
-                    <li><a href=""></a>Preguntas Frecuentes</li>
-                    <li><a href=""></a>Contenido Educativo</li>
-                    <li><a href=""></a>Nosotros</li>
-                </ul>
+            </div>    
+        </footer>
 
-            </div>
-
-            <div class="copyright fs-100">
+        <section class="padding-block-300 bg-accent-100">
+            <div class="copyright fs-100"></div>
                 <p>Jose Luis Castro
                     Your Solar and Real Estate Professional</p>
                 <p>Copyright josesolares - 2024. Todos los derechos reservados. Defensa de las y los consumidores.</p>    
             </div>
-        </footer>
+        </section>
         
 
 
