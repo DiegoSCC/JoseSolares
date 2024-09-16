@@ -9,8 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        
+        
     </head>
     <body>
 
@@ -26,10 +26,10 @@
                         </button>
                         <nav id="primary-navigation" class="primary-nav | fs-nav ">
                             <ul role="list" class="nav-list">
-                                <li><a href="">INICIO</a></li>
+                                <li><a href="#">INICIO</a></li>
                                 <li><a href="">NOSOTROS</a></li>
-                                <li><a href="">INFORMACION</a></li>
-                                <li><a href="">TU PROYECTO</a></li>
+                                <li><a href="/views/info.html">INFORMACION</a></li>
+                                <li><a href="/views/project.html">TU PROYECTO</a></li>
                                 <li><img src="./media/icons/globe-outline.svg" alt=""></li>
                             </ul>
                         </nav>
@@ -236,40 +236,39 @@
         </section> 
 
 
-        <section class="contact-form padding-block-700 bg-primary-900">
-            <!-- <h2>CONTÁCTANOS</h2>
-            <div class="contact-wrapper">
-                <div class="contact-banner">
-                    <div class="offset-sq"></div> 
-                    <p>Para consultas o reuniones escribinos al:</p>     
-                    <div class="banner-icons">
-                        <img src="media/icons/phone-portrait-outline.svg"  height="20">
-                        <p>+(909) 697-6932</p>
-                        <img src="media/icons/mail-outline.svg" width="20"  alt="">
-                        <p>jlcastrore@gmail.com</p>
-                    </div>
-                </div>     
-                <form class="form">
-                    <div class="email">
-                        <label for="email"><span aria-label="required"></span></label>
-                        <input id="email" type="text" name="email" placeholder="Nombre" required />
-                    </div>
-                    <div class="name">
-                        <label for="name"><span aria-label="required"></span></label>
-                        <input id="name" type="text" name="name" placeholder="Email" required />
-                    </div>
-                </form>
-                <form class="form">    
-                    <div class="message">
-                        <label for="message"></span></label>
-                        <input id="message" type="text" name="message" placeholder="Mensaje"/>
-                    </div>
-                    <p class="form-button">
-                        <button class="primary-button" type="submit">ENVIAR</button>
-                    </p>
-                </form>
+        <section class="contact-sect   | container padding-block-700 bg-primary-900">
 
-            </div> -->
+            <h2 class="fs-secondary-heading fw-bold">CONTACTANOS</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                  <div class="offset-sq"></div>  
+                  <p>Para consultas o reuniones escribinos al:</p>
+                  <div class="contact-details">
+                    <div class="contact-item">
+                      <img src="phone-icon.svg" alt="Phone">
+                      <span>(909) 697-6932</span>
+                    </div>
+                    <div class="contact-item">
+                      <img src="email-icon.svg" alt="Email">
+                      <span>jcastrore@gmail.com</span>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Contact Form -->
+                <div class="contact-form">
+                  <form>
+                    <div class="input-group">
+                      <input type="text" name="name" placeholder="Nombre">
+                      <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <textarea name="message" placeholder="Mensaje"></textarea>
+                    
+                  </form>
+                  <p><button type="submit" class="primary-button">ENVIAR</button></p>
+                </div>
+                
+              </div>
         </section>
 
         <footer class="footer | container ">
@@ -325,9 +324,8 @@
         
 
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="main.js" async defer></script>
+        
+        <script src="/main.js" async defer ></script>
     </body>
 </html>
