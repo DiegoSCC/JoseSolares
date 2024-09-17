@@ -856,6 +856,11 @@ select {
   text-align: center;
 }
 
+.google-logo{
+  max-width: 30px;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .review-box {
     flex-basis: 100%; /* Full width on smaller screens */
@@ -898,7 +903,7 @@ select {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #FFD700;
+  color: var(--clr-primary-300);
 }
 
 .promo-content p {
@@ -930,6 +935,8 @@ select {
 
 .contact-sect h2 {
   text-align: center;
+  color: white;
+  text-decoration: underline var(--clr-primary-300);
 }
 
 .contact-container {
