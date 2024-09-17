@@ -40,29 +40,26 @@ function startAutoplay() {
 
 // Initialize the first slide and start autoplay
 showSlide(currentIndex);
-startAutoplay();
-
-AOS.init();
+/* startAutoplay(); */
 
 
-  // Select the video element
-  const video = document.getElementById('video');
+const video = document.getElementById('video');
 
-  // Set up the IntersectionObserver
+if (video) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // If the video is in the viewport, play the video
         video.play();
       } else {
-        // If the video is out of the viewport, pause the video
         video.pause();
       }
     });
   });
 
-  // Observe the video element
   observer.observe(video);
+} else {
+  console.error("Video element not found");
+}
 
 
 

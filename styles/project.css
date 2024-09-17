@@ -61,6 +61,17 @@ button {
     }
 }
 
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-general) var(--padding-general) 7rem var(--padding-general);
+ }
+
+ .info-card h2 {
+    text-align: center;
+ }
+
 .black-info{
     clip-path: none;
 }

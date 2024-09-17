@@ -9,8 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/style.css">
-        <link rel="stylesheet" href="/info.css" >
-        <link rel="stylesheet" href="/project.css" >
+        <link rel="stylesheet" href="/styles/info.css" >
     </head>
     <body>
 
@@ -29,8 +28,8 @@
                                 <li><a href="/index.html">INICIO</a></li>
                                 <li><a href="">NOSOTROS</a></li>
                                 <li><a href="/views/info.html">INFORMACION</a></li>
-                                <li><a href="/views/project.html">TU PROYECTO</a></li>
-                                <li><img src="./media/icons/globe-outline.svg" alt=""></li>
+                                <li><a href="/project.html">TU PROYECTO</a></li>
+                                <li><img src="/media/icons/globe-outline.svg" alt=""></li>
                             </ul>
                         </nav>
                     </div>
@@ -209,7 +208,7 @@
                             <p>COMO CALCULAR CUANTOS PANELES NECESITAS</p>
                         </div>
                         <div class="video-thumbnail">
-                            <video preload="auto" controls muted>
+                            <video preload="auto" id="video" controls muted>
                                 <source id="mp4" class="video" id="video" src="/media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
                 
                                 <p>Error: This browser does not support html5 video!</p>
@@ -223,8 +222,8 @@
                             <p>COMO CALCULAR CUANTOS PANELES NECESITAS</p>
                         </div>
                         <div class="video-thumbnail">
-                            <video preload="auto" controls muted>
-                                <source id="mp4" class="video" id="video" src="/media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
+                            <video preload="auto"  controls muted>
+                                <source id="mp4" class="video"  src="/media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
                 
                                 <p>Error: This browser does not support html5 video!</p>
                             </video>
@@ -412,8 +411,7 @@
             </div>
         </section>
 
-        
-        <script src="/scripts/info.js"></script>
+        <script src="/scripts/info.js" async defer></script>
         <script src="/main.js" async defer></script>
     </body>
 
