@@ -8,13 +8,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles/style.css">
         
         
     </head>
     <body>
 
-        <section class="container">
+        <section class="">
             <div class="hero bg-primary-900">
                 <header class="primary-header">
                     <div class="nav-wrapper">
@@ -27,9 +28,9 @@
                         <nav id="primary-navigation" class="primary-nav | fs-nav ">
                             <ul role="list" class="nav-list">
                                 <li><a href="#">INICIO</a></li>
-                                <li><a href="">NOSOTROS</a></li>
+                                <li><a href="/views/us-page.html">NOSOTROS</a></li>
                                 <li><a href="/views/info.html">INFORMACION</a></li>
-                                <li><a href="/project.html">TU PROYECTO</a></li>
+                                <li><a href="/views/project.html">TU PROYECTO</a></li>
                                 <li><img src="/media/icons/globe-outline.svg" alt=""></li>
                             </ul>
                         </nav>
@@ -39,13 +40,13 @@
     
                 <section  class="text-neutral-100">
                     <div class="hero-cta | padding-block-900">
-                        <div class="container hero-text">
+                        <div class=" hero-text">
                             <h1 class=" fs-primary-heading fw-bold">
                                 Haz que cada rayo cuente
                             </h1>
                             <p style="color: #fde06c;">Ahorra de manera inteligente</p>
                         </div>
-                        <div class="container"><button class="primary-button">COMIENZA YA</button></div>
+                        <div class=""><button class="primary-button">COMIENZA YA</button></div>
                         
                     </div>    
                 </section>    
@@ -53,7 +54,7 @@
         </section>    
 
         <section class="padding-block-300 bg-primary-900 text-neutral-100">
-            <div class="info-cards container">
+            <div class="info-cards ">
                 <h2 class=" fs-secondary-heading padding-block-200 fw-bold">
                     ¿Por qué ahorrar con paneles solares?                </h2>
                 <div class="content-box | even-columns">
@@ -78,25 +79,47 @@
         </section>
         
         <section class="bg-primary-900 text-neutral-100">
-            <div class="carousel-wrapper ">  
-                <div class="carousel">
-                    <div class="carousel-images">
-                      <img src="/media/images/Foto Carrusel Inicio 1.png" alt="Image 1" class="active">
-                      <img src="./media/images/Foto Carrusel Inicio 2.png" alt="Image 2">
-                      <img src="./media/images/Foto Carrusel Inicio 3.png" alt="Image 3">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <button class="prev" onclick="prevSlide()">&#10094;</button>
-                    <button class="next" onclick="nextSlide()">&#10095;</button>
-                    <div class="dots">
-                      <span class="dot" onclick="goToSlide(0)"></span>
-                      <span class="dot" onclick="goToSlide(1)"></span>
-                      <span class="dot" onclick="goToSlide(2)"></span>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/media/images/Foto Carrusel Inicio 1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/images/Foto Carrusel Inicio 2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/media/images/Foto Carrusel Inicio 3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>                      
-            </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>                       
         </section>
         
-        <section class="info-video-wrapper | container padding-block-700">
+        <section class="info-video-wrapper |  padding-block-700">
             <div class="info-video-columns"> 
                 <div class="info-video">
                     <div class="offset-sq"></div>
@@ -111,29 +134,29 @@
                     <p>
                         Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. 
                     </p>
-                    <div class="container-button">
+                    <div class="-button">
                         <button class="info-video-button | secondary-button ">CONOCE MÁS</button>
                     </div>
                 </div>    
             </div>
         </section>
 
-        <section class="why-us-section | pointed-section container">
+        <section class="why-us-section | pointed-section ">
             <h2>¿Por qué <span>Nosotros?</span></h2>
             <p class="subtitle fw-bold">"Construyendo confianza, entregando resultados"</p>
             <p class="description">
               Con años de experiencia, nuestro equipo ofrece soluciones solares adaptadas a tus necesidades. Proporcionamos productos de alta calidad con tecnología avanzada, promoviendo un futuro sostenible y un servicio basado en integridad y transparencia.
-            </p>
-            <div class="why-us-cards container">
-                <div class="card">
+            </p>    
+            <div class="why-us-cards ">
+                <div class="w-u-card">
                     <img src="media/icons/handshake-icon.svg" alt="Handshake Icon">
                 </div>
                 
-                <div class="card">
+                <div class="w-u-card">
                     <img src="media/icons/liston-icon.svg" alt="Experience Icon">
                 </div>
                 
-                <div class="card">
+                <div class="w-u-card">
                     <img src="media/icons/megawatt.svg" alt="Megawatt Icon">
                 </div>
                 
@@ -141,9 +164,9 @@
                 <p>Tenemos más de 15 años de experiencia en la industria solar</p>
                 <p>Instalamos +1 Megawatt en energía solar anual</p>
             </div>
-          </section>
+        </section>
 
-          <section class="info-video-wrapper | container padding-block-700">
+          <section class="info-video-wrapper |  padding-block-700">
             <div class="info-video-columns"> 
                 <div class="info-video">
                     <div class="offset-sq"></div>
@@ -161,8 +184,8 @@
             </div>
         </section>
           
-        <section class=" decoration-home padding-block-700 bg-primary-900 text-neutral-100">
-            <div class="text-container container">
+        <section class=" decoration-home | padding-block-700 bg-primary-900 text-neutral-100">
+            <div class="text-container ">
                 <h2 class="ff-primary fs-secondary-heading fw-bold">
                     Nuestro negocio no es vender paneles solares, sino ayudar a nuestro cliente a tomar la decisión <span class="inline-title">perfecta.</span>
                 </h2>
@@ -173,7 +196,7 @@
             <h2 class="title fs-secondary-heading">NUESTROS CLIENTES</h2>
             <div class="reviews-container">
                 
-                <div class="review-box | container">
+                <div class="review-box | ">
                     <div class="star-group">
                         <picture class="pfp">
                             <img src="./media/images/profile-woman.svg" width="80" height="80" alt="Profile picture">
@@ -223,7 +246,7 @@
 
        
 
-        <section class="cta-section | container padding-block-700">
+        <section class="cta-section |  padding-block-700">
             <div class="promo-banner">
                 <img class="promo-img" src="/media/images/libro.png" alt="">
                 <div></div>
@@ -238,20 +261,20 @@
         </section> 
 
 
-        <section class="contact-sect   | container padding-block-700 bg-primary-900">
+        <section class="contact-sect   |  padding-block-700 bg-primary-900">
 
             <h2 class="fs-secondary-heading fw-bold">CONTACTANOS</h2>
             <div class="contact-container">
                 <div class="contact-info">
                   <div class="offset-sq"></div>  
-                  <p>Para consultas o reuniones escribinos al:</p>
+                  <p style="font-weight: bold;">Para consultas o reuniones escribinos al:</p>
                   <div class="contact-details">
                     <div class="contact-item">
-                      <img src="phone-icon.svg" alt="Phone">
+                      <img src="/media/icons/phone-portrait-outline.svg" alt="Phone">
                       <span>(909) 697-6932</span>
                     </div>
                     <div class="contact-item">
-                      <img src="email-icon.svg" alt="Email">
+                      <img src="/media/icons/mail-outline.svg" alt="Email">
                       <span>jcastrore@gmail.com</span>
                     </div>
                   </div>
@@ -273,7 +296,7 @@
               </div>
         </section>
 
-        <footer class="footer | container ">
+        <footer class="footer |  ">
     
             <div class="wave-container">
                 <img class="wave" src="/media/images/wave-footer.svg" alt="">
@@ -304,12 +327,12 @@
                   <h3>Acceso</h3>
                    
                     <ul class="link-list">    
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Información</a></li>
+                        <li><a href="/views/us-page.html">Nosotros</a></li>
+                        <li><a href="/views/info.html">Información</a></li>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Preguntas frecuentes</a></li>
-                        <li><a href="#">Contenido educativo</a></li>
-                        <li><a href="#">Crea Tu proyecto</a></li>
+                        <li><a href="/views/info.html">Preguntas frecuentes</a></li>
+                        <li><a href="/views/info.html">Contenido educativo</a></li>
+                        <li><a href="/views/project.html">Crea Tu proyecto</a></li>
                     </ul>
                   
                 </div>
@@ -317,14 +340,12 @@
         </footer>
 
         <section class="padding-block-300 bg-accent-100">
-            <div class="copyright container"></div>
-                <p>Jose Luis Castro
-                    Your Solar and Real Estate Professional</p>
-                <p>Copyright josesolares - 2024. Todos los derechos reservados. Defensa de las y los consumidores.</p>    
+            <div class="copyright ">
+                <p>Jose Luis Castro Your Solar and Real Estate Professional          Copyright josesolares - 2024. Todos los derechos reservados. Defensa de las y los consumidores.</p>   
             </div>
         </section>
 
-        <script src="/main.js" async defer ></script>
+        <script type="module" src="/scripts/main.js" async defer ></script>
     </body>
 </html>
 

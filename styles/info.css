@@ -1,5 +1,7 @@
 .info-bg{
-    background: url(/media/images/infoview/Foto\ Portada\ Informacion.png) no-repeat;
+    background: 
+    radial-gradient(circle, rgba(255,255,255,0) 55%, rgba(12,15,17,0.8575805322128851) 100%),
+    url(/media/images/infoview/Foto\ Portada\ Informacion.png) no-repeat;
     background-size: cover;
 }
 
@@ -20,16 +22,15 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
  }
 
- .text-info{
+ .text-infor{
     padding: 10px;
     width: 50vw;
     margin: 0 10% 0 10%;
     border: 2px solid var(--clr-primary-300);
     position: relative;
-    
  }
 
- .text-info::before {
+ .text-infor::before {
     display: block;
     position: absolute;
     content: " ";
@@ -37,25 +38,12 @@
     top: 20%;        
     left: 100%;    
     width: 25vw;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 2px;     
     background-color: var(--clr-primary-300);
  }
 
- .text-info::before {
-    display: block;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    top: 20%;        
-    left: 100%;    
-    width: 25vw;
-    overflow: hidden;
-    height: 2px;     
-    background-color: var(--clr-primary-300);
- }
-
- .text-info::after {
+ .text-infor::after {
     display: block;
     position: absolute;
     content: " ";
@@ -69,14 +57,14 @@
  }
 
 @media (max-width:50em) {
-    .text-info {
-        width: 70vw;
+    .text-infor {
+        width: 90vw;
     }
-    .text-info::after {
-        width: 15vw;
+    .text-infor::after {
+        width: 5vw;
     }
-    .text-info::before {
-        width: 15vw;
+    .text-infor::before {
+        width: 5vw;
     }
 }
 
@@ -87,8 +75,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0 6rem 6rem 6rem;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .reason-container {
+        padding: 2rem;
+    }
 }
 
 
@@ -109,12 +103,6 @@
     border: 2px solid var(--clr-primary-300);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    .reason-box {
-        flex-basis: 100%;
-    }
 }
 
 /* pasos */

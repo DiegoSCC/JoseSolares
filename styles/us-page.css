@@ -1,0 +1,171 @@
+
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: brightness(50%);   
+}
+
+.hero{
+    z-index: 1;
+}
+
+.photo-columns{
+    z-index: 1;
+    position: relative;
+}
+
+.us-photos-text{
+    color: white;
+    padding: 0 10vw 0 10vw ;
+}
+
+.us-photos-text h2{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+.first-photo,
+.second-photo{
+    position: relative;
+}
+
+.second-photo .offset-sq{
+    left: 20px;
+}
+
+
+
+.photo-1,
+.photo-2{
+    height: auto;
+    width: 30vw;
+}
+
+@media (max-width:50em) {
+    .photo-1,
+    .photo-2{
+        width: 60vw;
+    }
+    
+}
+
+.photo-columns {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+  } 
+  
+  
+  @media (min-width:50em) {
+    .photo-columns {
+      grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+    }
+  
+  }
+
+  /* Mision y Objetivos */
+
+  .mision-objectives-wrapper{
+    padding: 4rem;
+  }
+
+
+  /* testimoniales */
+
+  .testimonials h2{
+    padding: 2rem;
+  }
+
+  .testimonial-wrapper{
+    padding: 4rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    height: fit-content;
+  }
+
+  .video-testimonial video{
+    border-radius: 3%;
+}
+
+.test-box{
+    border: 4px solid var(--clr-primary-300);
+    padding: 1rem;
+}
+
+  @media (max-width:50em) {
+    .testimonial-wrapper{
+        justify-items: center;
+        grid-template-rows: none;
+    }
+    
+    .test-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video-testimonial{
+        height:fit-content;
+        
+    }
+  }
+
+
+  /* reviews */
+
+  
+
+
+  .review-section{
+    background-color: var(--clr-primary-900);
+
+    position: relative;
+    z-index: 1;
+  }
+
+  .review-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-primary-300);
+    clip-path: polygon(50% 6%, 0 75%, 0 0, 100% 0, 100% 75%);
+    z-index: -1; /* Place behind the content */
+  }
+
+  .review-content{
+    position: relative;
+    z-index: 1;
+    padding: 3rem;
+  }
+
+  #reviews h2{
+    text-align: start;
+  }
+
+  /* carousel */
+
+  .carousel-wrapper{
+    padding-bottom: 5rem;
+  }
+
+  .carousel-item img{
+    max-height: 300px;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+
+  carousel 
