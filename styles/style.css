@@ -759,15 +759,18 @@ select {
 #reviews h2{
   text-align: center;
   text-decoration: underline var(--clr-primary-300);
+  align-items: center;
 }
 
  .reviews-container {
+  align-self: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 20px;
   box-sizing: border-box;
+  max-width: 1200px;
 }
 
 .review-box {
@@ -1059,6 +1062,11 @@ textarea {
   min-height: 0;  /* NEW */
   min-width: 0;   /* NEW; needed for Firefox */
 }
+
+footer {
+  background:  linear-gradient(180deg, rgba(255,255,255,0) 49%, rgba(0,0,0,0.4) 100%);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .footer-content {
@@ -1073,6 +1081,12 @@ textarea {
   }
 }
 
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  
+}
 
 .copyright  p{
   font-size: 10px;

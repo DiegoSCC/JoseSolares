@@ -165,7 +165,7 @@
     max-height: 300px;
     width: 100vw;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(50%);    
   }
 
   carousel 
