@@ -12,10 +12,4 @@ document.querySelectorAll('.faq-question').forEach(item => {
 });
 
 
-document.querySelectorAll('.video-item').forEach(item => {
-  item.addEventListener('click', () => {
-      // For example, open a modal or play the video in a new window
-      alert('Playing Video...');
-  });
-});
 

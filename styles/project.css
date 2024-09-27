@@ -40,9 +40,6 @@ input[type="text"], input[type="email"], input[type="tel"] {
     box-sizing: border-box;
 }
 button {
-    background-color: #ffd600;
-    border: none;
-    padding: 10px 20px;
     cursor: pointer;
 }
 .info-box {
