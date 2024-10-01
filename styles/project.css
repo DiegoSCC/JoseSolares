@@ -20,15 +20,22 @@
     width: 80%;
     flex-direction: column;
 }
-.left-section {
-    padding: 20px;
+
+.left-section h1{
+    font-weight: bold;
 }
+
 .right-section {
     color: black;
     background-color: var(--clr-neutral-100);
     padding: 20px;
     height: 100%;
     box-shadow: black 0px 0px 10px;
+}
+
+.right-section p {
+    text-align: center;
+    margin: 0;
 }
 .form-grid {
     display: grid;
@@ -42,16 +49,18 @@ input[type="text"], input[type="email"], input[type="tel"] {
 button {
     cursor: pointer;
 }
-.info-box {
+.label-box {
     display: none;
     position: absolute;
     background-color: black;
-    color: black;
+    color: white;
     padding: 10px;
     max-width: 250px;
     font-size: 12px;
     z-index: 10;
 }
+
+
 @media (min-width: 768px) {
     .project-container {
         flex-direction: row;
@@ -84,4 +93,8 @@ button {
 
 .project-info {
     color: var(--clr-neutral-100);
+}
+
+.project-btn{
+    background-color: var(--clr-primary-300);
 }

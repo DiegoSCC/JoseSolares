@@ -1,10 +1,10 @@
 const termsCheckbox = document.getElementById('terms');
-const infoBox = document.getElementById('infoBox');
+const infoBox = document.getElementById('labelBox');
 
 termsCheckbox.addEventListener('mouseover', () => {
     infoBox.style.display = 'block';
 });
 
-termsCheckbox.addEventListener('mouseout', () => {
+termsCheckbox.addEventListener('mouseleave', () => {
     infoBox.style.display = 'none';
 });

@@ -82,6 +82,11 @@ h2
   font: inherit;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -662,6 +667,11 @@ select {
   padding: 3rem 5rem 3rem 5rem;
 }
 
+.phrase{
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 
 @media (max-width:50em){
   .text-container{
@@ -870,26 +880,34 @@ select {
   text-align: end;
 }
 
-.input-group {
+.input-group-form {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.input-group input,
+.input-group-form input,
 textarea {
   width: 100%;
   padding: 10px;
   border: none;
   outline: none;
   background-color: #333;
-  color: #fff;
-  border-radius: 5px;
+  color: black;
+  margin-left: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-radius: 8px 8px 8px 8px;
 }
 
 textarea {
   resize: none;
   height: 100px;
+}
+
+.form-button{
+  margin-top: 1rem;
 }
 
 

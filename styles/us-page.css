@@ -147,18 +147,21 @@
   /* testimoniales */
 
 .testimonials h2{
-  padding: 4rem;
+  padding: 1rem 4rem 1rem;
   max-width: 1200px;
   margin-inline: auto;
+  background: #fff;
+  margin-bottom: 0;
 }
 
 .testimonial-wrapper{
-  padding: 4rem;
+  padding: 1rem 4rem 3rem;
   grid-template-rows: 1fr 1fr 1fr;
   box-sizing: border-box;
   height: fit-content;
   max-width: 1200px;
   margin-inline: auto;
+  background: #fff;
 }
 
 .video-testimonial video{
@@ -308,4 +311,38 @@
   max-width: 100px;
 }
 
+.carousel {
+  position: static
+  ;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.carousel-caption h3 {
+  color: white;
+  font-family: var(--ff-primary);
+  text-decoration: underline var(--clr-primary-300);
+  text-align: start;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-family: var(--ff-primary);
+  text-align: start;
+}
+
+.carousel-item {
+  transition: opacity 0.3s ease-in; /* Fade duration and easing */
+}
   
