@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
         if (reviewText.classList.contains('expanded')) {
           reviewText.classList.remove('expanded');
-          button.textContent = 'Read More';
+          button.textContent = 'Leer más';
         } else {
           reviewText.classList.add('expanded');
-          button.textContent = 'Read Less';
+          button.textContent = 'Leer menos';
         }
       });
     });
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const reviewBoxes = document.querySelectorAll('.review-box');
   
     toggleReviewsBtn.addEventListener('click', () => {
-      const isExpanded = toggleReviewsBtn.textContent.includes('Less');
+      const isExpanded = toggleReviewsBtn.textContent.includes('MENOS');
   
       if (isExpanded) {
         // Show only the first 3 reviews
@@ -28,13 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
             box.style.display = 'none';
           }
         });
-        toggleReviewsBtn.textContent = 'Show More Reviews';
+        toggleReviewsBtn.textContent = 'MÁS RESEÑAS';
       } else {
         // Show all reviews
         reviewBoxes.forEach(box => {
           box.style.display = 'flex';
         });
-        toggleReviewsBtn.textContent = 'Show Less Reviews';
+        toggleReviewsBtn.textContent = 'MENOS RESEÑAS';
       }
     });
   });

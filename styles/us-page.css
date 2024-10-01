@@ -29,6 +29,8 @@
 .us-photos-text h2{
     font-size: 2rem;
     padding: 1rem;
+    text-align: center;
+    font-weight: bold;
 }
 
 
@@ -170,6 +172,8 @@
 
   @media (max-width:50em) {
     .testimonial-wrapper{
+        display:flex;
+        flex-direction: column-reverse;
         justify-items: center;
         grid-template-rows: none;
     }
@@ -207,7 +211,7 @@
     width: 100%;
     height: 100%;
     background: var(--clr-primary-300);
-    clip-path: polygon(50% 6%, 0 75%, 0 0, 100% 0, 100% 75%);
+    clip-path: polygon(50% 15%, 0 75%, 0 0, 100% 0, 100% 75%);
     z-index: -1; /* Place behind the content */
   }
 
@@ -221,41 +225,32 @@
   }
 
   .review-text {
-    max-height: 5em;
+    max-height: 4.8em;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: max-height 0.5s ease;
   }
   
   .review-text.expanded {
     max-height: 100%; 
   }
 
-  /* Only show the first 2 or 3 reviews by default */
 .review-box {
-  display: none; /* Hide all reviews by default */
+  display: none; 
+  align-self: start;
 }
 
 .review-box:nth-child(-n+3) {
-  display: flex; /* Show only the first 3 reviews */
+  display: flex; 
 }
 
 #toggle-reviews-btn {
-  background-color: var(--clr-primary-300);
-  color: white;
-  border: none;
   padding: 10px 20px;
   cursor: pointer;
-  margin: 20px auto;
+  margin: auto;
   display: block;
-  font-size: 16px;
+
   text-align: center;
 }
-
-#toggle-reviews-btn:hover {
-  background-color: var(--clr-primary-400); /* Optional hover effect */
-}
-
   
   .read-more-btn {
     background: none;
@@ -275,17 +270,42 @@
     color: white;
     text-decoration: underline var(--clr-primary-300);
    text-align: center;
+   
   }
 
   .carousel-wrapper{
     padding-bottom: 5rem;
+    overflow-x: hidden;
   }
 
   .carousel-item img{
-    max-height: 300px;
-    width: 100vw;
+    width: 100%;
+    position: relative;
     object-fit: cover;
     filter: brightness(50%);    
   }
+  .carousel-indicators {
+    position: relative;
+    border: 2px solid var(--clr-primary-300);
+    border-radius: 20px;
+    margin: 0.5rem 0 0;
+    padding: 0 1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  margin: 1rem;
+  flex: 1;
+  height: auto;
+  width: auto;
+  max-width: 150px;
+  background-color: transparent;
+  border: 1px transparent;
+  border-radius: 10px;
+}
+
+.carousel-indicators img{
+  width: 50%;
+  max-width: 100px;
+}
 
   

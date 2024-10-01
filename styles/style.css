@@ -4,6 +4,8 @@
   --clr-accent-700: hsl(219, 65%, 18%);
 
   --clr-primary-300: hsl(48, 100%, 69%);
+
+  
   --clr-primary-900: hsl(0, 0%, 15%);
   
   
@@ -30,7 +32,7 @@
   --fs-800: 2.5rem;
   --fs-900: 3.5rem;
 
-  --fs-body: var(--fs-650);
+  --fs-body: var(--fs-600);
   --fs-primary-heading: var(--fs-800);
   --fs-secondary-heading: var(--fs-700);
   --fs-nav: var(--fs-600);
@@ -364,6 +366,8 @@ select {
     gap: var(--size-600);
     text-align: center;
     font-weight: var(--fw-semi-bold);
+    padding: 0;
+    margin: 0;
   }
 
   .nav-list a {
@@ -404,7 +408,7 @@ select {
 
 @media (max-width: 768px) {
   .info-cards {
-    padding: 0;
+    padding: 2rem;
   }
 }
 
@@ -707,20 +711,20 @@ select {
   padding: 20px;
   box-sizing: border-box;
   max-width: 1200px;
+  
 }
 
 .review-box {
   flex: 1 1 300px; /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 300px */
   min-width: 200px; /* Set minimum size to prevent shrinking too much on small screens */
   max-width: 300px; /* Optional max-width to control how big it gets */
+  
   background-color: var(--clr-neutral-100);
   padding: 15px;
-  border: 2px solid var(--clr-primary-300);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.1);
   text-align: start;
-  align-self: start;
 }
 
 
@@ -828,7 +832,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
+  gap: 50px;
 }
 
 .contact-info {
@@ -941,7 +945,7 @@ textarea {
 
 @media (max-width: 20em) {
   .wave {
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     position: absolute;
     bottom: 250%;
@@ -968,7 +972,7 @@ textarea {
 
 /* Footer columns */
 .footer-col {
-  flex: 1 1 30%;
+  flex: 1 1 fit-content;
   margin: 10px 0;
 }
 
@@ -988,12 +992,14 @@ textarea {
 }
 
 .footer-col ul li {
-  overflow: hidden;  /* NEW */
-  min-width: 0;      /* NEW; needed for Firefox */
+  overflow: hidden; 
+  min-width: 0;
+  margin-right: auto;     
 }
 
 .footer-col ul li a {
   color:var(--clr-primary-900);
+  text-decoration: underline;
 }
 
 .highlight {
@@ -1011,12 +1017,38 @@ textarea {
   font-size: 1.5em;
 }
 
+ul.custom-arrows {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
+  height: fit-content;
+  text-align: start;
+}
+
+ul.custom-arrows li {
+  position: relative;
+  padding-left: 20px; /* Space for the arrow */
+}
+
+ul.custom-arrows li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.4em; /* Adjust vertical alignment */
+  border: solid black;
+  border-width: 0 2px 2px 0; /* Create the arrow shape */
+  padding: 3px;
+  transform: rotate(-45deg); /* Rotate to make it an arrow */
+  display: inline-block;
+}
+
 .link-list {
+  flex-basis: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  min-height: 0;  /* NEW */
-  min-width: 0;   /* NEW; needed for Firefox */
+  min-height: 0; 
+  min-width: 0;   
+  gap: 0.5rem;
 }
 
 footer {
@@ -1039,6 +1071,7 @@ footer {
 
 
 .copyright{
+  background-color: var(--clr-primary-300);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
