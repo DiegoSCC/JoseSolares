@@ -12,8 +12,9 @@
 }
 
 
+
 .project-container {
-    margin: 0 auto 10px;
+    margin: auto auto auto auto;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -31,12 +32,18 @@
     padding: 20px;
     height: 100%;
     box-shadow: black 0px 0px 10px;
+    margin-bottom: 3rem;
+}
+
+.right-section h2{
+    text-align: center;
 }
 
 .right-section p {
     text-align: center;
     margin: 0;
 }
+
 .form-grid {
     display: grid;
     gap: 10px;
@@ -60,8 +67,20 @@ button {
     z-index: 10;
 }
 
+@media (min-width:50em){
+    .project-form-section{
+        height: 70vh;
+        display: flex;
+        align-items: center;
+    }
 
-@media (min-width: 768px) {
+    .right-section p {
+        margin: 1rem;
+    }
+}
+
+
+@media (min-width: 50em) {
     .project-container {
         flex-direction: row;
     }

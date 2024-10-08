@@ -195,7 +195,7 @@
 
   
   .slideshow-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     background-color: #333;
     border: 5px solid #f4c431;
@@ -501,7 +501,7 @@ item.active{
 }
 
 .slide{
-    padding: 3rem 6rem;
+    margin-inline: auto;
 }
 
 @media (max-width:1000px){

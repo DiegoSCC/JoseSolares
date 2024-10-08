@@ -19,23 +19,25 @@
         <section class="">
             <div class="hero bg-primary-900">
                 <header class="primary-header">
-                    <div class="nav-wrapper">
-                        <a href=""><img  class="logo" src="media/images/logo.svg" alt="JoseSolares"></a>
-                        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                            <img src="media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
-                            <img src="media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
-                            <span class="visually-hidden">Menu</span>
-                        </button>
-                        <nav id="primary-navigation" class="primary-nav | fs-nav ">
-                            <ul role="list" class="nav-list">
-                                <li><a href="#">INICIO</a></li>
-                                <li><a href="/views/us-page.html">NOSOTROS</a></li>
-                                <li><a href="/views/info.html">INFORMACION</a></li>
-                                <li><a href="/views/project.html">TU PROYECTO</a></li>
-                                <li><img src="/media/icons/globe-outline.svg" alt=""></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href=""><img  class="logo" src="media/images/logo.svg" alt="JoseSolares"></a>
+                            <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                                <img src="media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
+                                <img src="media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
+                                <span class="visually-hidden">Menu</span>
+                            </button>
+                            <nav id="primary-navigation" class="primary-nav | fs-nav ">
+                                <ul role="list" class="nav-list">
+                                    <li><a href="#">INICIO</a></li>
+                                    <li><a href="/views/us-page.html">NOSOTROS</a></li>
+                                    <li><a href="/views/info.html">INFORMACION</a></li>
+                                    <li><a href="/views/project.html">TU PROYECTO</a></li>
+                                    <li><img src="/media/icons/globe-outline.svg" alt=""></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>    
                 </header>
 
     
@@ -47,7 +49,8 @@
                             </h1>
                             <p style="color: #fde06c;">Ahorra de manera inteligente</p>
                         </div>
-                        <div class=""><button class="primary-button">COMIENZA YA</button></div>
+                        <a href="/views/project.html"><div class=""><button class="primary-button">COMIENZA YA</button></div></a>
+                        
                         
                     </div>    
                 </section>    
@@ -127,19 +130,19 @@
                         Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. 
                     </p>
                     <div class="-button">
-                        <button class="info-video-button | secondary-button "><a href="/views/us-page.html">CONOCE MÁS</a></button>
+                        <a href="/views/us-page.html"><button class="info-video-button | secondary-button ">CONOCE MÁS</button></a>
                     </div>
                 </div>    
             </div>
         </section>
 
         <section class="why-us-section | pointed-section ">
-            <h2>¿Por qué <span>Nosotros?</span></h2>
+            <h2><span>¿POR QUÉ</span> NOSOTROS?</h2>
             <p class="subtitle fw-bold">"Construyendo confianza, entregando resultados"</p>
             <p class="description">
               Con años de experiencia, nuestro equipo ofrece soluciones solares adaptadas a tus necesidades. Proporcionamos productos de alta calidad con tecnología avanzada, promoviendo un futuro sostenible y un servicio basado en integridad y transparencia.
             </p>    
-            <div class="why-us-cards ">
+            <div class="why-us-cards hidden">
                 <div class="w-u-card">
                     <img src="media/icons/handshake-icon.svg" alt="Handshake Icon">
                 </div>
@@ -156,6 +159,30 @@
                 <p>Tenemos más de 15 años <br>de experiencia en la industria solar</p>
                 <p>Instalamos +1 Megawatt <br> en energía solar anual</p>
             </div>
+            
+            
+            <div id="carouselExampleCaptions" class="carousel slide mobile-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="w-u-card">
+                            <img src="media/icons/handshake-icon.svg" alt="Handshake Icon">
+                            <p>Ayudamos alrededor de <br>+170 familias cada año</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="w-u-card">
+                            <img src="media/icons/liston-icon.svg" alt="Experience Icon">
+                            <p>Tenemos más de 15 años <br>de experiencia en la industria solar</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="w-u-card">
+                            <img src="media/icons/megawatt.svg" alt="Megawatt Icon">
+                            <p>Instalamos +1 Megawatt <br> en energía solar anual</p>
+                        </div>
+                    </div>
+                </div>      
+            </div>
         </section>
 
           <section class="info-video-wrapper |  padding-block-700">
@@ -169,9 +196,11 @@
                     <p>
                         Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles. 
                     </p>
-                    <div class="container-button">
-                       <a href="/views/project.html"><button href="/project.html" class="info-video-button | secondary-button ">DISEÑA AQUI</button></a>
-                    </div>
+                    <a href="/views/project.html">
+                        <div class="container-button">
+                       <button href="/project.html" class="info-video-button | secondary-button ">DISEÑA AQUI</button>
+                        </div>
+                    </a>    
                 </div>    
             </div>
         </section>
@@ -239,7 +268,7 @@
 
         <section class="cta-section |  padding-block-700">
             <div class="promo-banner">
-                <img class="promo-img" src="/media/images/libro.png" alt="">
+                <img class="promo-img" src="/media/images/foto-tablet-inicio.png" alt="">
                 <div></div>
                 <div class="promo-content">
                   <h2>No compres paneles sin primero leer nuestro libro</h2>
