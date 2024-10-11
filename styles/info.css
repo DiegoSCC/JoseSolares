@@ -480,6 +480,12 @@ textarea{
     width: 80%;
 }
 
+@media (max-width:30em){
+    .carousel-inner{
+        width: 100%;
+    }
+}
+
 item.active{
     display: flex;
     flex: 1;
