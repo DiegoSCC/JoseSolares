@@ -757,6 +757,10 @@ select {
   
 }
 
+#reviews {
+  padding: 4rem 0 5rem;
+}
+
 .review-box {
   flex: 1 1 300px; /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 300px */
   min-width: 200px; /* Set minimum size to prevent shrinking too much on small screens */
@@ -805,7 +809,7 @@ select {
   justify-content: center;
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 42%, rgb(37, 37, 37) 73%);
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .promo-banner {
