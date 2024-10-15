@@ -135,7 +135,7 @@
 
 
 .mision-objectives-wrapper{
-    padding: 4rem 8rem;
+    padding: 4rem 2rem;
     z-index: 2;
 }
 
@@ -184,22 +184,15 @@
 
   /* testimoniales */
 
-.testimonials h2{
-  padding: 1rem 4rem 1rem;
-  max-width: 1200px;
-  margin-inline: auto;
-  background: #fff;
-  margin-bottom: 0;
+.testimonials{
+  background-color: var(--clr-neutral-100);
 }
 
 .testimonial-wrapper{
-  padding: 1rem 4rem 3rem;
-  grid-template-rows: 1fr 1fr 1fr;
-  box-sizing: border-box;
-  height: fit-content;
-  max-width: 1200px;
-  margin-inline: auto;
-  background: #fff;
+  padding: 2rem 0 5rem;
+  background: var(--clr-primary-300);
+  clip-path: polygon(50% 20%, 0% 100%, 100% 100%);
+
 }
 
 .video-testimonial video{
