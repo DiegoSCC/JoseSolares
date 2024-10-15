@@ -457,16 +457,15 @@
                 </div>
             
                 
-                 <div class="contact-form">
-                  <form>
-                    <div class="input-group-form">
-                      <input type="text" name="name" placeholder="Nombre" autocomplete="name">
-                      <input type="email" name="email" placeholder="Email" autocomplete="email">
-                    </div>
-                    <textarea name="message" placeholder="Mensaje"></textarea>
-                    
-                  </form>
-                  <p><button type="submit" class="secondary-button form-button">ENVIAR</button></p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                      <div class="input-group-form">
+                        <input type="text" name="name" placeholder="Nombre" autocomplete="name" required>
+                        <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+                      </div>
+                      <textarea name="message" placeholder="Mensaje" required></textarea>
+                      <p><button type="submit" class="primary-button form-button">ENVIAR</button></p>
+                    </form>
                 </div>
                 
               </div>
