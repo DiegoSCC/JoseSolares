@@ -350,12 +350,26 @@ h3 {
     text-decoration: underline var(--clr-primary-300);
 }
 
+.video-section-wrapper{
+    background-color: white;
+    clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding: 7rem 0 5rem;
+}
+
+@media (max-width:768px){
+    .video-section-wrapper{
+        clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+    
+}
+
 .video-section {
     display: flex;
     justify-content: center;
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .video-section h2 {
