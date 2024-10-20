@@ -1,0 +1,200 @@
+{
+    "en": {
+        "header": {
+            "inicio": "HOME",
+            "nosotros": "ABOUT US",
+            "tu_proyecto": "YOUR PROJECT",
+            "informacion": "INFORMATION"
+        },
+        "hero_section": {
+            "title": "Make Every Ray Count",
+            "subtitle": "Save Smartly",
+            "cta_button": "GET STARTED NOW"
+        },
+        "info_cards": {
+            "why_save": "Why Save with Solar Panels?",
+            "card1": {
+                "title": "Protect Yourself Against Price Increases",
+                "description": "Having your own electricity also reduces dependence on utility companies and their variable rates. You gain greater control over your energy costs and protection against future price increases."
+            },
+            "card2": {
+                "title": "Energy Savings",
+                "description": "Solar panels allow you to generate your own electricity, drastically reducing energy bills and providing substantial savings over time."
+            },
+            "card3": {
+                "title": "Energy Resilience",
+                "description": "By opting for solar panels, you not only reduce your energy costs but also decrease your carbon footprint. A double benefit for your wallet and the planet, promoting a cleaner and more sustainable future."
+            }
+        },
+        "video_section": {
+            "title": "WHO WE ARE",
+            "description": "Our mission is to provide exceptional service in solar energy solutions, reflecting our commitment to quality and innovation. We focus on understanding each client's individual needs to provide efficient and sustainable solar solutions.",
+            "cta_button": "LEARN MORE"
+        },
+        "why_us": {
+            "title": "WHY US?",
+            "subtitle": "Building Trust, Delivering Results",
+            "description": "With years of experience, our team offers solar solutions tailored to your needs. We provide high-quality products with advanced technology, promoting a sustainable future and a service based on integrity and transparency.",
+            "card1": "We help around +170 families every year",
+            "card2": "We have over 15 years of experience in the solar industry",
+            "card3": "We install +1 Megawatt in solar energy annually"
+        },
+        "design_project": {
+            "title": "DESIGN YOUR OWN PROJECT",
+            "description": "Our mission is to provide exceptional service in solar energy solutions, reflecting our commitment to quality and innovation. We focus on understanding each client's individual needs to provide efficient and sustainable solar solutions.",
+            "cta_button": "DESIGN HERE"
+        },
+        "business_quote": "Our business is not to sell solar panels but to help our client make the perfect decision.",
+        "client_reviews": {
+            "title": "OUR CLIENTS",
+            "review1": {
+                "name": "Danielle Miramontes",
+                "text": "I would like to recognize José, who saved me from hiring another solar energy company. He is fast and efficient, guiding me through every step of the process. Excellent customer service and reliable. Not only do I give him an excellent review, but I also give him a 199%. He gave me the peace of mind to ask him 101 questions... his business is amazing."
+            },
+            "review2": {
+                "name": "Sylvia Lara",
+                "text": "José Castro was the best at answering all my questions and prevented someone from trying to scam me into renting instead of buying my solar system. We need more honest people like him. Thank you for all your help, I appreciate it a lot!"
+            },
+            "review3": {
+                "name": "Carolina Cisneros",
+                "text": "José Castro is my representative, I am very happy with his performance, great service, always present and quick to answer all my questions to my complete satisfaction. My experience with Solar was easy and fast; I will definitely recommend him to all my friends and family. Great job! @Jose thanks for all your help and support."
+            }
+        },
+        "cta_section": {
+            "title": "Don't buy panels without first reading our book",
+            "description": "Educational book on solar panels",
+            "small_text": "By loading your data, we send you our book for free at no cost."
+        },
+        "contact_section": {
+            "title": "CONTACT US",
+            "description": "For inquiries or meetings, write to us at:",
+            "contact_details": {
+                "phone": "(909) 697-6932",
+                "email": "jcastrore@gmail.com"
+            },
+            "cta_button": "SEND"
+        },
+        "footer": {
+            "company_name": "Jose Solares",
+            "tagline": "We turn your value into efficient and profitable energy for your home.",
+            "contact": {
+                "title": "Contact",
+                "phone": "(909) 697-6932",
+                "email": "jcastorre@gmail.com"
+            },
+            "access": {
+                "title": "Access",
+                "links": {
+                    "about_us": "About Us",
+                    "information": "Information",
+                    "home": "Home",
+                    "faq": "Frequently Asked Questions",
+                    "educational_content": "Educational Content",
+                    "create_project": "Create Your Project"
+                }
+            },
+            "copyright": "Jose Luis Castro Your Solar and Real Estate Professional. Copyright josesolares - 2024. All rights reserved. Consumer defense."
+        }
+    },
+    "es": {
+        "header": {
+            "inicio": "INICIO",
+            "nosotros": "ACERCA DE NOSOTROS",
+            "tu_proyecto": "TU PROYECTO",
+            "informacion": "INFORMACIÓN",
+            "language_selector": {
+                "english": "Inglés",
+                "espanol": "Español"
+            }
+        },
+        "hero_section": {
+            "title": "Haz que cada rayo cuente",
+            "subtitle": "Ahorra inteligentemente",
+            "cta_button": "EMPIEZA AHORA"
+        },
+        "info_cards": {
+            "why_save": "¿Por qué ahorrar con paneles solares?",
+            "card1": {
+                "title": "Protégete contra el aumento de precios",
+                "description": "Tener tu propia electricidad también reduce la dependencia de las compañías de servicios públicos y sus tarifas variables. Obtienes un mayor control sobre tus costos de energía y protección contra futuros aumentos de precios."
+            },
+            "card2": {
+                "title": "Ahorros energéticos",
+                "description": "Los paneles solares te permiten generar tu propia electricidad, reduciendo drásticamente las facturas de energía y proporcionando ahorros sustanciales a lo largo del tiempo."
+            },
+            "card3": {
+                "title": "Resiliencia energética",
+                "description": "Al optar por paneles solares, no solo reduces tus costos de energía, sino que también disminuyes tu huella de carbono. Un beneficio doble para tu bolsillo y el planeta, promoviendo un futuro más limpio y sostenible."
+            }
+        },
+        "video_section": {
+            "title": "QUIÉNES SOMOS",
+            "description": "Nuestra misión es proporcionar un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para ofrecer soluciones solares eficientes y sostenibles.",
+            "cta_button": "APRENDER MÁS"
+        },
+        "why_us": {
+            "title": "¿POR QUÉ NOSOTROS?",
+            "subtitle": "Construyendo confianza, entregando resultados",
+            "description": "Con años de experiencia, nuestro equipo ofrece soluciones solares adaptadas a tus necesidades. Proporcionamos productos de alta calidad con tecnología avanzada, promoviendo un futuro sostenible y un servicio basado en la integridad y la transparencia.",
+            "card1": "Ayudamos a más de +170 familias cada año",
+            "card2": "Tenemos más de 15 años de experiencia en la industria solar",
+            "card3": "Instalamos +1 Megavatio en energía solar anualmente"
+        },
+        "design_project": {
+            "title": "DISEÑA TU PROPIO PROYECTO",
+            "description": "Nuestra misión es proporcionar un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para ofrecer soluciones solares eficientes y sostenibles.",
+            "cta_button": "DISEÑA AQUÍ"
+        },
+        "business_quote": "Nuestro negocio no es vender paneles solares, sino ayudar a nuestros clientes a tomar la decisión perfecta.",
+        "client_reviews": {
+            "title": "NUESTROS CLIENTES",
+            "review1": {
+                "name": "Danielle Miramontes",
+                "text": "Me gustaría reconocer a José, quien me salvó de contratar a otra compañía de energía solar. Es rápido y eficiente, guiándome a través de cada paso del proceso. Excelente servicio al cliente y confiable. No solo le doy una excelente reseña, sino que también le doy un 199%. Me dio la tranquilidad de preguntarle 101 preguntas... su negocio es increíble."
+            },
+            "review2": {
+                "name": "Sylvia Lara",
+                "text": "José Castro fue el mejor para responder todas mis preguntas y evitó que alguien intentara estafarme alquilando en lugar de comprando mi sistema solar. Necesitamos más personas honestas como él. Gracias por toda tu ayuda, ¡lo aprecio mucho!"
+            },
+            "review3": {
+                "name": "Carolina Cisneros",
+                "text": "José Castro es mi representante, estoy muy feliz con su desempeño, gran servicio, siempre presente y rápido para responder todas mis preguntas a mi completa satisfacción. Mi experiencia con Solar fue fácil y rápida; definitivamente lo recomendaré a todos mis amigos y familiares. ¡Gran trabajo! @José gracias por toda tu ayuda y apoyo."
+            }
+        },
+        "cta_section": {
+            "title": "No compres paneles sin primero leer nuestro libro",
+            "description": "Libro educativo sobre paneles solares",
+            "small_text": "Al cargar tus datos, te enviamos nuestro libro de forma gratuita y sin costo."
+        },
+        "contact_section": {
+            "title": "CONTÁCTANOS",
+            "description": "Para consultas o reuniones, escríbenos a:",
+            "contact_details": {
+                "phone": "(909) 697-6932",
+                "email": "jcastrore@gmail.com"
+            },
+            "cta_button": "ENVIAR"
+        },
+        "footer": {
+            "company_name": "Jose Solares",
+            "tagline": "Convertimos tu valor en energía eficiente y rentable para tu hogar.",
+            "contact": {
+                "title": "Contacto",
+                "phone": "(909) 697-6932",
+                "email": "jcastorre@gmail.com"
+            },
+            "access": {
+                "title": "Acceso",
+                "links": {
+                    "about_us": "Acerca de Nosotros",
+                    "information": "Información",
+                    "home": "Inicio",
+                    "faq": "Preguntas Frecuentes",
+                    "educational_content": "Contenido Educativo",
+                    "create_project": "Crea Tu Proyecto"
+                }
+            },
+            "copyright": "Jose Luis Castro Tu Profesional en Energía Solar y Bienes Raíces. Copyright josesolares - 2024. Todos los derechos reservados. Defensa del consumidor."
+        }
+    }
+}

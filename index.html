@@ -18,7 +18,7 @@
                 <header class="primary-header">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <a href=""><img  class="logo" src="media/images/logo.svg" alt="JoseSolares"></a>
+                            <a href=""><img class="logo" src="media/images/logo.svg" alt="JoseSolares"></a>
                             <button class="mobile-nav-toggle" aria-controls="primary-navigation">
                                 <img src="media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
                                 <img src="media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
@@ -26,32 +26,44 @@
                             </button>
                             <nav id="primary-navigation" class="primary-nav | fs-nav ">
                                 <ul role="list" class="nav-list">
-                                    <li><a href="#">INICIO</a></li>
-                                    <li><a href="/views/us-page.html">NOSOTROS</a></li>
-                                    <li><a href="/views/info.html">INFORMACION</a></li>
-                                    <li><a href="/views/project.html">TU PROYECTO</a></li>
-                                    <li><img src="/media/icons/globe-outline.svg" alt=""></li>
+                                    <li><a href="#" data-translate="home">INICIO</a></li>
+                                    <li><a href="/views/us-page.html" data-translate="about">NOSOTROS</a></li>
+                                    <li><a href="/views/project.html" data-translate="project">TU PROYECTO</a></li>
+                                    <li class="nav-item"><a data-translate="info" href="/views/info.html">INFORMACIÓN</a></li>
+                                    <li class="nav-item language-selector">
+                                        <img src="/media/icons/united-states-flag-icon.svg" alt="">
+                                        <img src="/media/icons/Language.svg" alt="Language">
+                                        <ul class="dropdown">
+                                            <li class="dropdown-item" data-lang="en">
+                                                <p class="english">English</p>
+                                                <img src="/media/icons/united-states-flag-icon.svg" alt="">
+                                            </li>
+                                            <li class="dropdown-item" data-lang="es">
+                                                <p class="espanol">Español</p>
+                                                <img src="/media/icons/spain-country-flag-icon.svg" alt="">
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
-                    </div>    
+                    </div>
                 </header>
 
     
-                <section  class="hero-container | text-neutral-100">
+                <section class="hero-container | text-neutral-100">
                     <div class="hero-cta | padding-block-900">
                         <div class="hero-text">
-                            <h1 class=" fs-primary-heading fw-bold">
+                            <h1 class="fs-primary-heading fw-bold" data-translate="heroTitle">
                                 Haz que cada rayo cuente
                             </h1>
-                            <p style="color: #fde06c;">Ahorra de manera inteligente</p>
+                            <p style="color: #fde06c;" data-translate="heroSubtitle">Ahorra de manera inteligente</p>
                         </div>
-                        <a href="/views/project.html"><div class=""><button class="primary-button">COMIENZA YA</button></div></a>   
+                        <a href="/views/project.html"><div class=""><button class="primary-button" data-translate="ctaButton">COMIENZA YA</button></div></a>
                     </div>
-                    <div class="icons-hero">
-                    </div>
+                    <div class="icons-hero"></div>
                     <img src="/media/icons/ChevronDown.svg" alt="" class="chevron-hero">
-                </section>    
+                </section>   
             </div>
         </section>    
 
@@ -368,12 +380,9 @@
             </div>
         </section>
 
-        
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="module" src="/scripts/main.js" async defer ></script>
+        <script src="/scripts/main.js" defer></script>
     </body>
 </html>
 
