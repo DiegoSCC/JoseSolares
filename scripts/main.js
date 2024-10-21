@@ -165,11 +165,13 @@ document.addEventListener('DOMContentLoaded', function () {
               aboutTitle: "WHO WE ARE",
               aboutDescription: "Our mission is to provide exceptional service in solar energy solutions, reflecting our commitment to quality and innovation. We focus on understanding the individual needs of each client to provide efficient and sustainable solar solutions.",
               aboutButton: "LEARN MORE",
-              trustBuilding: "\"Building Trust, Delivering Results\"",
+              whyUsTitle: "WHY SHOULD YOU CHOOSE US?",
+              trustBuilding: "Building Trust, Delivering Results",
               experienceDescription: "With years of experience, our team offers solar solutions tailored to your needs. We provide high-quality products with advanced technology, promoting a sustainable future and a service based on integrity and transparency.",
               helpingFamilies: "Helping around <br> +170 families each year",
               experienceYears: "We have over 15 years <br> of experience in the solar industry",
               installedMegawatts: "Installed +1 Megawatt <br> in solar energy",
+              projectTitle: "DESIGN YOUR PROJECT",
               footerText: "2024 | JoseSolares | All rights reserved"
           },
           es: {
@@ -187,11 +189,13 @@ document.addEventListener('DOMContentLoaded', function () {
               aboutTitle: "QUIÉNES SOMOS",
               aboutDescription: "Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles.",
               aboutButton: "CONOCE MÁS",
-              trustBuilding: "\"Construyendo confianza, entregando resultados\"",
+              whyUsTitle: "¿POR QUÉ NOSOTROS?",
+              trustBuilding: "Construyendo confianza, entregando resultados",
               experienceDescription: "Con años de experiencia, nuestro equipo ofrece soluciones solares adaptadas a tus necesidades. Proporcionamos productos de alta calidad con tecnología avanzada, promoviendo un futuro sostenible y un servicio basado en integridad y transparencia.",
               helpingFamilies: "Ayudamos alrededor de <br> +170 familias cada año",
               experienceYears: "Tenemos más de 15 años <br> de experiencia en la industria solar",
               installedMegawatts: "Instalamos +1 Megawatt <br> en energía solar",
+              projectTitle: "DISEÑA TU PROPIO PROYECTO",
               footerText: "2024 | JoseSolares | Todos los derechos reservados"
           }
       };

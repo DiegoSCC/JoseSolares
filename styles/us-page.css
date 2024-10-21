@@ -343,8 +343,8 @@
 }
 
 .carousel {
-  position: static
-  ;
+  position: static;
+  padding: 0;
 }
 
 .carousel-caption {
@@ -359,6 +359,8 @@
   font-weight: bold;
 }
 
+
+
 .carousel-caption h3 {
   color: white;
   font-family: var(--ff-primary);
@@ -368,10 +370,42 @@
 
 .carousel-caption p {
   margin-bottom: 0;
-  font-size: 1.25rem;
   font-family: var(--ff-primary);
   text-align: start;
 }
+
+
+@media (max-width: 600px){
+  .carousel-caption p{ 
+    font-size: 16px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    left: 10%;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .carousel-caption h3{
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .carousel{
+    padding: 2rem 0;
+  }
+
+}
+
 
 .carousel-item {
   transition: opacity 0.3s ease-in; /* Fade duration and easing */
