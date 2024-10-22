@@ -69,7 +69,7 @@ async function submitForm(event) {
   };
 
   try {
-    const response = await fetch('/submit-form', {
+    const response = await fetch('https://backend.api.solarbyjose.com/submit-form', {  // Updated URL
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
@@ -86,6 +86,7 @@ async function submitForm(event) {
     console.error('Error:', error);
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const languageSelector = document.querySelector('.language-selector');
