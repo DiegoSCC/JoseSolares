@@ -330,14 +330,16 @@ h3 {
 }
 
 .faq-answer {
-    display: none;
-    padding: 15px;
+    max-height: 0; /* Start collapsed */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease; /* Animate max-height */
+    padding: 0 15px; /* Initial horizontal padding */
     background-color: #fff;
     border-top: 1px solid #ddd;
 }
 
 .faq-answer p {
-    margin: 0;
+    margin: 15px 0;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -598,7 +600,7 @@ ul.custom-rectangle li::before {
 }
 
 .carousel-indicators .active {
-    background-color: var(--clr-primary-300);
+    color: var(--clr-primary-300);
     opacity: 1;
 }
 .carousel-indicators img{
@@ -615,31 +617,6 @@ ul.custom-rectangle li::before {
     }
     
 }
-
-.carousel-indicators::before {
-    display: block;
-    position: absolute;
-    content: " ";  
-    top: 50%;        
-    left: 100%;    
-    width: 60vw;
-    overflow-x: hidden;
-    height: 3px;     
-    background-color: var(--clr-primary-300);
- }
-
- .carousel-indicators::after {
-    display: block;
-    position: absolute;
-    content: " ";
-    top: 50%;        
-    right: 100%;    
-    width: 60vw;
-    overflow: hidden;
-    height: 3px;     
-    background-color: var(--clr-primary-300);
- }
-
 
  .carousel-item {
     transition: opacity 0.3s ease-in; /* Fade duration and easing */

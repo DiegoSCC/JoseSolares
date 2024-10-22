@@ -297,6 +297,7 @@ select {
 
 
 .nav-list {
+  margin-bottom: 0;
   font-weight: var(--fw-semi-bold);
   font-size: var(--fs-nav);
   color: white;
@@ -346,6 +347,7 @@ select {
   justify-content: space-between;
 }
 
+
 .dropdown {
   list-style: none;
   padding: 0;
@@ -353,7 +355,7 @@ select {
   position: absolute;
   top: 140%;
   right: 0;
-  background: var(--clr-primary-900);
+  
   border: 2px solid var(--clr-accent-100);
   color: white;
   border-radius: 5%;
@@ -365,6 +367,8 @@ select {
 }
 
 .dropdown-item {
+  background-color: var(--clr-primary-900);
+  transition: 0.2s ease-in-out;
   display: flex;
   gap: 10px;
   padding: 10px 20px;
@@ -375,7 +379,7 @@ select {
 }
 
 .dropdown-item:hover {
-  background-color: #5a5a5a;
+  background-color: #616161;
 }
 
 .dropdown.show {
@@ -398,6 +402,10 @@ select {
     box-shadow: 0 0 0.5em rgb(0, 0, 0, 0.20);
   }
 
+  .language-selector{
+    justify-content: flex-start;
+  }
+
   .primary-header[data-overlay]::before {
     content: " ";
     position: fixed;
@@ -409,7 +417,6 @@ select {
 
   .primary-nav[data-visible] {
     display: block;
-    overflow: hidden;
     
   }
 
@@ -528,12 +535,34 @@ select {
   padding: 2rem;
 }
 
+.carousel-indicators{
+  bottom: -16px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px; /* Set a fixed width to create a circle */
+  height: 12px; /* Set equal height to match the width */
+  border-radius: 50%; /* Make the shape circular */
+  background-color: var(--clr-primary-300); /* Set the circle color */
+  border: none; /* Remove the transparent borders */
+  margin-right: 6px; /* Adjust the margin for proper spacing */
+  margin-left: 6px;
+  opacity: 0.5; /* Keep the default opacity */
+  transition: opacity 0.6s ease; /* Keep the smooth transition */
+}
+
+/* Style for the active indicator */
+.carousel-indicators .active {
+  opacity: 1; /* Full opacity for the active indicator */
+  background-color: var(--clr-primary-300); /* Keep the same color */
+  transform: scale(1.2); /* Optional scaling for the active state */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
 
 @media (max-width: 50em){
   .carousel{
     display: none;
   }
-  
 }
 
 /* Quienes somos */
