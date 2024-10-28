@@ -259,13 +259,17 @@
   }
 
   .review-text {
+    height: auto;
     max-height: 4.8em;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: 0.3s ease-in-out;
   }
   
   .review-text.expanded {
-    max-height: 100%; 
+    height: auto;
+    max-height: 100em;
+    transition: 0.6s ease-in-out; 
   }
 
 .review-box {
@@ -320,8 +324,7 @@
   }
   .carousel-indicators {
     position: relative;
-    border: 2px solid var(--clr-primary-300);
-    border-radius: 20px;
+    border: none;
     margin: 0.5rem 0 0;
     padding: 0 1rem;
 }
@@ -343,9 +346,10 @@
 }
 
 .carousel {
-  position: static
-  ;
+  position: static;
+  padding: 0;
 }
+
 
 .carousel-caption {
   position: absolute;
@@ -359,6 +363,8 @@
   font-weight: bold;
 }
 
+
+
 .carousel-caption h3 {
   color: white;
   font-family: var(--ff-primary);
@@ -368,10 +374,56 @@
 
 .carousel-caption p {
   margin-bottom: 0;
-  font-size: 1.25rem;
   font-family: var(--ff-primary);
   text-align: start;
 }
+
+
+@media (max-width: 600px){
+  .carousel-caption p{ 
+    font-size: 16px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    left: 10%;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .carousel-caption h3{
+    font-size: 18px;
+  }
+
+  .carousel{
+    padding: 2rem 0;
+  }
+
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px; /* Set a fixed width to create a circle */
+  height: 12px; /* Set equal height to match the width */
+  border-radius: 50%; /* Make the shape circular */
+  background-color: var(--clr-primary-300); /* Set the circle color */
+  border: none; /* Remove the transparent borders */
+  margin-right: 6px; /* Adjust the margin for proper spacing */
+  margin-left: 6px;
+  opacity: 0.5; /* Keep the default opacity */
+  transition: opacity 0.6s ease; /* Keep the smooth transition */
+}
+
+/* Style for the active indicator */
+.carousel-indicators .active {
+  opacity: 1; /* Full opacity for the active indicator */
+  background-color: var(--clr-primary-300); /* Keep the same color */
+  transform: scale(1.2); /* Optional scaling for the active state */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+Exp
 
 .carousel-item {
   transition: opacity 0.3s ease-in; /* Fade duration and easing */
