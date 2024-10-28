@@ -53,6 +53,10 @@ window.onclick = function(event) {
   }
 };
 
+// Use an environment variable for the backend URL, or fallback to a default for local testing
+const API_URL = BACKEND_URL || 'http://localhost:3000';
+
+
 // Reset form function
 function resetForm() {
   document.getElementById('contactForm').reset();
