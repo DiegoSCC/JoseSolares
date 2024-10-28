@@ -56,7 +56,8 @@ window.onclick = function(event) {
 // Use an environment variable for the backend URL, or fallback to a default for local testing
 const API_URL = "http://206.189.254.107:3000" || 'http://localhost:3000'
 
-// Function to handle form submission
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
 async function submitForm(event) {
   event.preventDefault(); // Prevent default form submission
 
@@ -67,7 +68,7 @@ async function submitForm(event) {
   };
 
   try {
-    const response = await fetch(`${API_URL}/submit-form`, {  // Use API_URL
+    const response = await fetch('http://206.189.254.107:3000/submit-form', { // Use full URL
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
