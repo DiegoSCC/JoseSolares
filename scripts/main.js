@@ -56,12 +56,6 @@ window.onclick = function(event) {
 // Use an environment variable for the backend URL, or fallback to a default for local testing
 const API_URL = BACKEND_URL || 'http://localhost:3000';
 
-
-// Reset form function
-function resetForm() {
-  document.getElementById('contactForm').reset();
-}
-
 // Function to handle form submission
 async function submitForm(event) {
   event.preventDefault(); // Prevent default form submission
@@ -73,7 +67,7 @@ async function submitForm(event) {
   };
 
   try {
-    const response = await fetch('/submit-form', {
+    const response = await fetch(`${API_URL}/submit-form`, {  // Use API_URL
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
@@ -90,6 +84,12 @@ async function submitForm(event) {
     console.error('Error:', error);
   }
 }
+
+// Reset form function
+function resetForm() {
+  document.getElementById('contactForm').reset();
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
   const languageSelector = document.querySelector('.language-selector');
