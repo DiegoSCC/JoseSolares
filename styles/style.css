@@ -621,15 +621,16 @@ select {
   padding:  0rem var(--padding-general) 0rem var(--padding-general);
 }
 
+.info-video-text p{
+  margin-bottom: 1rem;
+}
+
 @media (max-width:600px){
   .info-video-text{
     padding: 0;
     
   }
 
-  .info-video-text p{
-    margin-bottom: 1rem
-  }
 }
 
 .info-video-text h3 {
@@ -832,7 +833,15 @@ select {
 }
 
 #reviews {
-  padding: 4rem 0 5rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 4rem 1rem 5rem;
+}
+
+.reviewsButton {
+  margin-left: auto;
+  text-align: end;
+  margin-right: 1rem;
 }
 
 .review-box {
