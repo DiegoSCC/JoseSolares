@@ -18,18 +18,18 @@
                 <header class="primary-header">
                     <div class="container">
                         <div class="nav-wrapper">
-                            <a href=""><img class="logo" src="media/images/logo.svg" alt="JoseSolares"></a>
+                            <a href=""><img class="logo" src="/media/images/logo.svg" alt="JoseSolares"></a>
                             <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                                <img src="media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
-                                <img src="media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
+                                <img src="/media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
+                                <img src="/media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
                                 <span class="visually-hidden">Menu</span>
                             </button>
                             <nav id="primary-navigation" class="primary-nav | fs-nav ">
                                 <ul role="list" class="nav-list">
-                                    <li><a href="#" data-translate="home">INICIO</a></li>
+                                    <li><a href="/index.html" data-translate="home">INICIO</a></li>
                                     <li><a href="/views/us-page.html" data-translate="about">NOSOTROS</a></li>
-                                    <li><a href="/views/project.html" data-translate="project">TU PROYECTO</a></li>
                                     <li class="nav-item"><a data-translate="info" href="/views/info.html">INFORMACIÓN</a></li>
+                                    <li><a href="/views/project.html" data-translate="project">TU PROYECTO</a></li>
                                     <li class="nav-item language-selector">
                                         <img src="/media/icons/united-states-flag-icon.svg" alt="">
                                         <img src="/media/icons/Language.svg" alt="Language">
@@ -308,10 +308,10 @@
                 <div class="contact-form">
                     <form id="contactForm">
                       <div class="input-group-form">
-                        <input type="text" name="name" placeholder="Nombre" autocomplete="name" required>
-                        <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+                        <input type="text" data-translate="namePlaceholder" name="name" placeholder="Nombre" autocomplete="name" required>
+                        <input type="email" data-translate="emailPlaceholder" name="email" placeholder="Email" autocomplete="email" required>
                       </div>
-                      <textarea name="message" placeholder="Mensaje" required></textarea>
+                      <textarea name="message" data-translate="messagePlaceholder" placeholder="Mensaje" required></textarea>
                       <p ><button type="submit" class="primary-button form-button" data-translate="contactButton">ENVIAR</button></p>
                     </form>
                 </div>
@@ -354,12 +354,12 @@
           
             
                 <div class="footer-col">
-                  <h3 data-translate="footerLinks"="">Acceso</h3>
+                  <h3 data-translate="footerLinks">Acceso</h3>
                    
                     <ul class="link-list custom-arrows">    
                         <li><a data-translate="footerItem1" href="/views/us-page.html">Nosotros</a></li>
                         <li><a data-translate="footerItem2" href="/views/info.html">Información</a></li>
-                        <li><a data-translate="footerItem3" href="#">Inicio</a></li>
+                        <li><a data-translate="footerItem3" href="/index.html">Inicio</a></li>
                         <li><a data-translate="footerItem4" href="/views/info.html#faqSection">Preguntas frecuentes</a></li>
                         <li><a data-translate="footerItem5" href="/views/info.html#edContent">Contenido educativo</a></li>
                         <li><a data-translate="footerItem6" href="/views/project.html">Crea Tu proyecto</a></li>
@@ -377,7 +377,9 @@
 
        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/scripts/main.js" defer></script>
+        <script type="module" src="/scripts/main.js" defer></script>
+        <script type="module" src="/scripts/formsubmit.js" defer></script>
+        <script type="module" src="/scripts/translateIndex.js" defer></script>
     </body>
 </html>
 

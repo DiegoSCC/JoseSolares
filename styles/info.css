@@ -444,6 +444,7 @@ h3 {
 textarea{
     border: 1px solid var(--clr-primary-900);
     background-color: var(--clr-neutral-100);
+    color: #333;
 }
 
 .solar-panels h2 {
@@ -654,3 +655,7 @@ ul.custom-rectangle li::before {
     color: black;
     text-decoration: underline var(--clr-primary-300);
   }
+
+.contact-form{
+    color: black;
+}
