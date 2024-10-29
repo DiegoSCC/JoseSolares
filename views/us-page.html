@@ -14,9 +14,6 @@
         <link rel="stylesheet" href="/styles/project.css">
         <link rel="stylesheet" href="/styles/info.css">
         <link rel="stylesheet" href="/styles/us-page.css">
-       
-
-        
     </head>
 
     <body>
@@ -28,22 +25,38 @@
                     Your browser does not support the video tag.
                 </video>
                 <header class="primary-header">
-                    <div class="nav-wrapper">
-                        <a href=""><img  class="logo" src="/media/images/logo.svg" alt="JoseSolares"></a>
-                        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                            <img src="/media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
-                            <img src="/media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
-                            <span class="visually-hidden">Menu</span>
-                        </button>
-                        <nav id="primary-navigation" class="primary-nav | fs-nav ">
-                            <ul role="list" class="nav-list">
-                                <li><a href="/index.html">INICIO</a></li>
-                                <li><a href="/views/us-page.html">NOSOTROS</a></li>
-                                <li><a href="/views/info.html">INFORMACION</a></li>
-                                <li><a href="/views/project.html">TU PROYECTO</a></li>
-                                <li><img src="/media/icons/globe-outline.svg" alt=""></li>
-                            </ul>
-                        </nav>
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href=""><img class="logo" src="/media/images/logo.svg" alt="JoseSolares"></a>
+                            <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                                <img src="/media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
+                                <img src="/media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
+                                <span class="visually-hidden">Menu</span>
+                            </button>
+                            <nav id="primary-navigation" class="primary-nav | fs-nav ">
+                                <ul role="list" class="nav-list">
+                                    <li><a href="/index.html" data-translate="home">INICIO</a></li>
+                                    <li><a href="/views/us-page.html" data-translate="about">NOSOTROS</a></li>
+                                    
+                                    <li class="nav-item"><a data-translate="info" href="/views/info.html">INFORMACIÓN</a></li>
+                                    <li><a href="/views/project.html" data-translate="project">TU PROYECTO</a></li>
+                                    <li class="nav-item language-selector">
+                                        <img src="/media/icons/united-states-flag-icon.svg" alt="">
+                                        <img src="/media/icons/Language.svg" alt="Language">
+                                        <ul class="dropdown">
+                                            <li class="dropdown-item" data-lang="en">
+                                                <p class="english">English</p>
+                                                <img src="/media/icons/united-states-flag-icon.svg" alt="">
+                                            </li>
+                                            <li class="dropdown-item" data-lang="es">
+                                                <p class="espanol">Español</p>
+                                                <img src="/media/icons/spain-country-flag-icon.svg" alt="">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </header>
 
@@ -51,10 +64,10 @@
                 <section  class="text-neutral-100">
                     <div class="hero-cta | padding-block-900">
                         <div class=" hero-text">
-                            <h1 class=" fs-primary-heading fw-bold">
+                            <h1 data-translate="heading" class=" fs-primary-heading fw-bold">
                                 Nosotros
                             </h1>
-                            <p style="color: #fde06c;">Juntos, iluminamos un futuro sostenible</p>
+                            <p data-translate="subtitle" style="color: #fde06c;">Juntos, iluminamos un futuro sostenible</p>
                         </div>
                     </div>
                     
@@ -64,19 +77,19 @@
                             <span>
                                 15+
                             </span>
-                            <p>
+                            <p data-translate="experienceText">
                                 AÑOS DE EXPERIENCIA
                             </p>
                         </div>
                         <div class="icons-hero-item">
                             <img src="/media/icons/handshake.svg" height="40">
-                            <p>Un Objetivo</p>
+                            <p data-translate="singleGoal">Un Objetivo</p>
                         </div>
                         <div class="icons-hero-item">
                             <span>
                                 1+
                             </span>
-                            <p>
+                            <p data-translate="megawattText">
                                 MEGAWATT GENERADO <br>POR AÑO
                             </p>
                         </div>
@@ -86,17 +99,17 @@
         </section>
 
         <section class="us-photos bg-primary-900 padding-block-900">
-            <p style="color: #ffdc53; text-align: center; font-weight: bold;" >
+            <p data-translate="meetUs" style="color: #ffdc53; text-align: center; font-weight: bold;" >
                 CONÓCENOS
             </h1>
             <div class="us-photos-text">
-                <h2 style="font-style: italic;">
+                <h2 data-translate="subHeading" style="font-style: italic;">
                     Unidos para brindarte lo mejor.
                 </h2>
-                <p>
+                <p data-translate="description1">
                     Con más de 15 años de experiencia en la industria, nuestro equipo combina sus conocimientos con una pasión inquebrantable por encontrar las mejores soluciones para nuestros clientes. Entendemos que cada decisión de compra es significativa, y es por eso que nos tomamos el tiempo para escuchar, comprender y asesorar de manera honesta y clara.
                 </p>
-                <p>
+                <p data-translate="description2">
                     Nuestro objetivo es Impulsar el avance en energía solar mediante soluciones tecnológicas avanzadas y un enfoque centrado en el cliente, promoviendo un futuro más sostenible y accesible para todos.
                 </p>
             </div>
@@ -116,69 +129,26 @@
             <div class="mision-objectives-container | padding-block-700">
                 <div class="even-columns mision-objectives-wrapper">
                     <div class="mision-objective-text">
-                        <h2>Nuestros <span style="color: #ffdc53;">Objetivos</span></h2>
-                        <p>Nos dedicamos a liderar la transición hacia una energía más sostenible y eficiente. Nuestro <span style="font-weight: bold;">objetivo</span> es ofrecer soluciones solares de alta calidad que maximizan la eficiencia energética y contribuyen a un futuro más verde. Nuestro compromiso es proporcionar un servicio excepcional, desde la asesoría hasta el soporte post-instalación, y mantenernos a la cabeza en tecnología solar con innovaciones avanzadas. También educamos a nuestros clientes sobre los beneficios de la energía solar, ayudándoles a tomar decisiones informadas y optimizar su inversión. Con estos objetivos, buscamos transformar el sector y construir un futuro más limpio y eficiente para todos.</p>
+                        <h2 data-translate="objectivesHeading">Nuestros <span style="color: #ffdc53;">Objetivos</span></h2>
+                        <p data-translate="objectivesText">Nos dedicamos a liderar la transición hacia una energía más sostenible y eficiente. Nuestro <span style="font-weight: bold;">objetivo</span> es ofrecer soluciones solares de alta calidad que maximizan la eficiencia energética y contribuyen a un futuro más verde. Nuestro compromiso es proporcionar un servicio excepcional, desde la asesoría hasta el soporte post-instalación, y mantenernos a la cabeza en tecnología solar con innovaciones avanzadas. También educamos a nuestros clientes sobre los beneficios de la energía solar, ayudándoles a tomar decisiones informadas y optimizar su inversión. Con estos objetivos, buscamos transformar el sector y construir un futuro más limpio y eficiente para todos.</p>
                     </div>
                     <div class="mision-objective-text">                        
-                        <h2>Nuestra <span style="color: #ffdc53;">Misión</span></h2>
-                        <p>Nuestra <span style="font-weight: bold;">misión</span>  es proporcionar soluciones solares que promuevan un futuro más sostenible mientras reducen significativamente los costos energéticos de nuestros clientes. Nos comprometemos a ofrecer sistemas eficientes y confiables que optimicen los gastos a largo plazo, asegurando un retorno de inversión favorable. Con un enfoque en la innovación y el asesoramiento experto, hacemos que la energía solar sea una opción económicamente viable y beneficiosa, contribuyendo a un futuro más verde y con menores costos energéticos.</p>
+                        <h2 data-translate="missionHeading">Nuestra <span style="color: #ffdc53;">Misión</span></h2>
+                        <p data-translate="missionText">Nuestra <span style="font-weight: bold;">misión</span>  es proporcionar soluciones solares que promuevan un futuro más sostenible mientras reducen significativamente los costos energéticos de nuestros clientes. Nos comprometemos a ofrecer sistemas eficientes y confiables que optimicen los gastos a largo plazo, asegurando un retorno de inversión favorable. Con un enfoque en la innovación y el asesoramiento experto, hacemos que la energía solar sea una opción económicamente viable y beneficiosa, contribuyendo a un futuro más verde y con menores costos energéticos.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        
-
         <section class="testimonials |">
-            <div class="even-columns testimonial-wrapper">
-                <!-- <div class="test-box">
-                    <p style="font-weight: bold;"> Julian y su hija desde California</p>
-                    <p>“José Castro fue el mejor en responder todas mis preguntas y evitó que alguien intentara estafarme para que alquilara y no comprara mi sistema solar. Necesitamos más personas honestas como él. ¡Gracias por toda su ayuda, la aprecio mucho!”
-                    </p>
-                </div>
-                <div class="video-testimonial">
-                    <video id="video" class="video" preload="auto" playsinline controls muted>
-                        <source id="mp4" src="/media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
-        
-                        <p>Error: This browser does not support html5 video!</p>
-                    </video>
-                </div>  
-
-                <div class="test-box">
-                    <p style="font-weight: bold;"> Michael </p>
-                    <p>“Estoy muy contento con los resultados, gran servicio, siempre presentes y rápidos para responder todas mis preguntas a mi entera satisfacción. Mi experiencia con Solar fue fácil y rápida, sumamente recomendado.”
-
-                    </p>
-                </div>
-                <div class="video-testimonial">
-                    <video id="video" class="video" preload="auto" playsinline controls muted>
-                        <source id="mp4" src="/media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
-        
-                        <p>Error: This browser does not support html5 video!</p>
-                    </video>
-                </div>
-                
-
-                <div class="test-box">
-                    <p style="font-weight: bold;"> La familia Garcia</p>
-                    <p>“Me gustaría reconocer a José, quien me salvó de contratar a otra empresa de energía solar. Me acompaño en cada paso del proceso. Excelente servicio al cliente y confiable. Me dio la tranquilidad de poder hacerle 101 preguntas.”
-                    </p>
-                </div>
-                <div class="video-testimonial">
-                    <video id="video" class="video" preload="auto" playsinline controls muted>
-                        <source id="mp4" src="/media/videos/Video Inicio Quienes Somos.mp4" type='video/mp4'/>
-                        <p>Error: This browser does not support html5 video!</p>
-                    </video>
-                </div> -->
-            </div>
+            <div class="even-columns testimonial-wrapper"> </div>
         </section>
 
         <section id="reviewsUs" class="bg-primary-900 ">
             <div class="review-section | " >
                 <div class="review-content">
-                    <h2>Reseñas de <span style="color: white;">Google</span></h2>
-                    <p><i>Que opinan nuestros clientes</i></p>
+                    <h2 data-translate="reviewsHeading">Reseñas de <span style="color: white;">Google</span></h2>
+                    <p data-translate="reviewsSubtitle"><i>Que opinan nuestros clientes</i></p>
                     <div class="reviews-container">
                 
                         <div class="review-box">
@@ -192,7 +162,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">José Castro fue el mejor en responder todas mis preguntas y evitó que alguien intentara estafarme para que alquilara y no comprara mi sistema solar. Necesitamos más personas honestas como él. ¡Gracias por toda su ayuda, la aprecio mucho!</p>
+                                <p class="review-text" data-translate="review1Text">José Castro fue el mejor en responder todas mis preguntas y evitó que alguien intentara estafarme para que alquilara y no comprara mi sistema solar. Necesitamos más personas honestas como él. ¡Gracias por toda su ayuda, la aprecio mucho!</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -212,7 +182,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">Me gustaría reconocer a José, quien me salvó de contratar a otra empresa de energía solar. Es rápido y eficiente, me acompaño en cada paso del proceso. Excelente servicio al cliente y confiable. No solo le doy una excelente reseña, sino que también le doy un 199 %. Me dio la tranquilidad de poder hacerle 101 preguntas... su negocio es increíble.</p>
+                                <p class="review-text" data-translate="review2Text">Me gustaría reconocer a José, quien me salvó de contratar a otra empresa de energía solar. Es rápido y eficiente, me acompaño en cada paso del proceso. Excelente servicio al cliente y confiable. No solo le doy una excelente reseña, sino que también le doy un 199 %. Me dio la tranquilidad de poder hacerle 101 preguntas... su negocio es increíble.</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -231,7 +201,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">José Castro es mi representante, estoy muy contento con su desempeño, gran servicio, siempre presente y rápido para responder todas mis preguntas a mi entera satisfacción. Mi experiencia con Solar fue fácil y rápida, seguramente lo recomendaré a todos mis amigos y familiares. ¡Buen trabajo! @Jose gracias por toda tu ayuda y apoyo.</p>
+                                <p class="review-text" data-translate="review3Text">José Castro es mi representante, estoy muy contento con su desempeño, gran servicio, siempre presente y rápido para responder todas mis preguntas a mi entera satisfacción. Mi experiencia con Solar fue fácil y rápida, seguramente lo recomendaré a todos mis amigos y familiares. ¡Buen trabajo! @Jose gracias por toda tu ayuda y apoyo.</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -250,7 +220,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">“Estoy muy feliz de haber podido tener a José Castro como mi representante solar. Ha estado muy ocupado con mi familia desde que instaló 4 casas, incluida la casa de mi madre. Se aseguró de que obtuviéramos la tarifa más baja y nos ayudó en todo momento hasta que tuvimos los paneles funcionando. Recomiendo encarecidamente a José Castro como su Solar Rep. Gracias.”</p>
+                                <p class="review-text" data-translate="review4Text">“Estoy muy feliz de haber podido tener a José Castro como mi representante solar. Ha estado muy ocupado con mi familia desde que instaló 4 casas, incluida la casa de mi madre. Se aseguró de que obtuviéramos la tarifa más baja y nos ayudó en todo momento hasta que tuvimos los paneles funcionando. Recomiendo encarecidamente a José Castro como su Solar Rep. Gracias.”</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -269,7 +239,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">“José Castro es increíble!!! Soy un comprador de vivienda por primera vez y me traslade a California. Fue muy informativo, siempre receptivo y ha hecho todo lo posible para ayudarme a aclimatarme. Definitivamente deberías buscarlo.”</p>
+                                <p class="review-text" data-translate="review5Text">“José Castro es increíble!!! Soy un comprador de vivienda por primera vez y me traslade a California. Fue muy informativo, siempre receptivo y ha hecho todo lo posible para ayudarme a aclimatarme. Definitivamente deberías buscarlo.”</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -288,7 +258,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">“José Castro es muy profesional y conocedor de la energía solar. Él realmente se preocupa por sus clientes. Siempre estuvo disponible para responder nuestras preguntas y mantenernos actualizados durante el proceso. ¡Gracias José!.”</p>
+                                <p class="review-text" data-translate="review6Text">“José Castro es muy profesional y conocedor de la energía solar. Él realmente se preocupa por sus clientes. Siempre estuvo disponible para responder nuestras preguntas y mantenernos actualizados durante el proceso. ¡Gracias José!.”</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -307,7 +277,7 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">“José Castro fue muy profesional desde el primer contacto. Se tomó el tiempo para explicarme cada detalle del proceso y resolvió todas mis dudas sobre la instalación de paneles solares. Gracias a su asesoría, pude tomar una decisión informada. ¡Muy recomendable!.”</p>
+                                <p class="review-text" data-translate="review7Text">“José Castro fue muy profesional desde el primer contacto. Se tomó el tiempo para explicarme cada detalle del proceso y resolvió todas mis dudas sobre la instalación de paneles solares. Gracias a su asesoría, pude tomar una decisión informada. ¡Muy recomendable!.”</p>
                                 <button class="read-more-btn">Leer más</button>
                             </div>
                             <div>
@@ -326,32 +296,28 @@
                                 </picture>
                             </div>
                             <div class="review-content">
-                                <p class="review-text">“José Castro demostró un conocimiento profundo sobre energía solar y me ofreció una solución que se ajusta perfectamente a mis necesidades. Además, su amabilidad y disposición para ayudar fueron notables. Sin duda, una gran experiencia trabajar con él.”</p>
-                                <button class="read-more-btn">Leer más</button>
+                                <p class="review-text" data-translate="review8Text">“José Castro demostró un conocimiento profundo sobre energía solar y me ofreció una solución que se ajusta perfectamente a mis necesidades. Además, su amabilidad y disposición para ayudar fueron notables. Sin duda, una gran experiencia trabajar con él.”</p>
+                                <button class="read-more-btn" data-translate="readMore">Leer más</button>
                             </div>
                             <div>
                                 <img class="google-logo" src="/media/images/icons8-logo-de-google-48.png" width="30" height="30" alt="">
                             </div>
                         </div>
                 </div>
-                <button class="primary-button" id="toggle-reviews-btn">MÁS RESEÑAS</button>
+                <button class="primary-button" id="toggle-reviews-btn" data-translate="moreReviewsButton">MÁS RESEÑAS</button>
             </div>
-            
-
         </section>
 
-         <section class="projects-slides bg-primary-900">
-            <h2>Proyectos</h2>
+        <section class="projects-slides bg-primary-900">
+            <h2 data-translate="Proyectos">Proyectos</h2>
             <div class="carousel-wrapper ">
-                
                 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="/media/images/Foto Proyectos Perris Nosotros.jpg" class="" alt="...">
                         <div class="carousel-caption">
                           <h3>Perris, Ca.</h3>
-                          <p>13 Paneles</p>
+                          <p data-translate="13 Paneles">13 Paneles</p>
                           <p>5.2kW</p>
                         </div>
                       </div>
@@ -359,7 +325,7 @@
                         <img src="/media/images/Foto Proyectos Fontana Nosotros.jpg" class="" alt="...">
                         <div class="carousel-caption">
                             <h3>Fontana, Ca.</h3>
-                            <p>22 Paneles</p>
+                            <p data-translate="22 Paneles">22 Paneles</p>
                             <p>8.8kW</p>
                         </div>
                       </div>
@@ -367,7 +333,7 @@
                         <img src="/media/images/Foto Proyectos Upland Nosotros.jpeg" class="" alt="...">
                         <div class="carousel-caption">
                             <h3>Upland, Ca.</h3>
-                            <p>26 Paneles</p>
+                            <p data-translate="26 Paneles">26 Paneles</p>
                             <p>10.4kW</p>
                         </div>
                       </div>
@@ -391,12 +357,12 @@
                 
                 <div class="footer-col">
                   <h2 style="color:white">Jose<span class="highlight">Solares</span></h2>
-                  <p>Convertimos tu valor en energía eficiente<br> y rentable para tu hogar.</p>
+                  <p data-translate="footerTitle">Convertimos tu valor en energía eficiente<br> y rentable para tu hogar.</p>
                 </div>
           
             
                 <div class="footer-col">
-                  <h3>Contacto</h3>
+                  <h3 data-translate="footerContact">Contacto</h3>
                   <p>Tel: (909) 697-6932</p>
                   <a href="mailto:jcastorre@gmail.com">jcastorre@gmail.com</a>
                   <div class="social-icons">
@@ -408,16 +374,16 @@
           
             
                 <div class="footer-col">
-                  <h3>Acceso</h3>
+                  <h3 data-translate="footerLinks">Acceso</h3>
                    
-                  <ul class="link-list custom-arrows">    
-                    <li><a href="/views/us-page.html">Nosotros</a></li>
-                    <li><a href="/views/info.html">Información</a></li>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/views/info.html#faqSection">Preguntas frecuentes</a></li>
-                    <li><a href="/views/info.html#edContent">Contenido educativo</a></li>
-                    <li><a href="/views/project.html">Crea Tu proyecto</a></li>
-                </ul>
+                    <ul class="link-list custom-arrows">    
+                        <li><a data-translate="footerItem1" href="/views/us-page.html">Nosotros</a></li>
+                        <li><a data-translate="footerItem2" href="/views/info.html">Información</a></li>
+                        <li><a data-translate="footerItem3" href="/index.html">Inicio</a></li>
+                        <li><a data-translate="footerItem4" href="/views/info.html#faqSection">Preguntas frecuentes</a></li>
+                        <li><a data-translate="footerItem5" href="/views/info.html#edContent">Contenido educativo</a></li>
+                        <li><a data-translate="footerItem6" href="/views/project.html">Crea Tu proyecto</a></li>
+                    </ul>
                   
                 </div>
             </div>  
@@ -425,12 +391,21 @@
 
         <section class="padding-block-300">
             <div class="copyright ">
-                <p>Jose Luis Castro Your Solar and Real Estate Professional</p>
-                <p>Copyright josesolares - 2024. Todos los derechos reservados. Defensa de las y los consumidores.</p>   
+                <p data-translate="footerText">2024 | JoseSolares | Todos los derechos reservados</p> 
             </div>
         </section>
 
+        
+        <!-- Modal Structure -->
+        <div id="customModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage">Your message here</p>
+            </div>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="/scripts/us-page.js" defer></script>
-        <script type="module" src="/scripts/main.js" async defer ></script>
+        <script type="module" src="/scripts/main.js"  defer ></script>
+        <script type="module" src="/scripts/translateUs.js"  defer ></script>
     </body>

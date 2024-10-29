@@ -12,9 +12,6 @@
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" href="/styles/project.css">
         <link rel="stylesheet" href="/styles/info.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-        
     </head>
 
 <html>    
@@ -22,54 +19,69 @@
         <section class="hero-section ">
             <div class="hero project-bg bg-primary-900">
                 <header class="primary-header">
-                    <div class="nav-wrapper">
-                        <a href=""><img  class="logo" src="/media/images/logo.svg" alt="JoseSolares"></a>
-                        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-                            <img src="/media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
-                            <img src="/media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
-                            <span class="visually-hidden">Menu</span>
-                        </button>
-                        <nav id="primary-navigation" class="primary-nav | fs-nav ">
-                            <ul role="list" class="nav-list">
-                                <li><a href="/index.html">INICIO</a></li>
-                                <li><a href="/views/us-page.html">NOSOTROS</a></li>
-                                <li><a href="/views/info.html">INFORMACION</a></li>
-                                <li><a href="#">TU PROYECTO</a></li>
-                                <li><img src="/media/icons/globe-outline.svg" alt=""></li>
-                            </ul>
-                        </nav>
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href=""><img class="logo" src="/media/images/logo.svg" alt="JoseSolares"></a>
+                            <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+                                <img src="media/icons/menu-toggle.svg" alt="Menu-toggle" class="menu-icon">
+                                <img src="media/icons/menu-toggle.svg" alt="Close-menu" class="close-icon">
+                                <span class="visually-hidden">Menu</span>
+                            </button>
+                            <nav id="primary-navigation" class="primary-nav | fs-nav ">
+                                <ul role="list" class="nav-list">
+                                    <li><a href="/index.html" data-translate="home">INICIO</a></li>
+                                    <li><a href="/views/us-page.html" data-translate="about">NOSOTROS</a></li>
+                                    <li><a href="/views/project.html" data-translate="project">TU PROYECTO</a></li>
+                                    <li class="nav-item"><a data-translate="info" href="/views/info.html">INFORMACIÓN</a></li>
+                                    <li class="nav-item language-selector">
+                                        <img src="/media/icons/united-states-flag-icon.svg" alt="">
+                                        <img src="/media/icons/Language.svg" alt="Language">
+                                        <ul class="dropdown">
+                                            <li class="dropdown-item" data-lang="en">
+                                                <p class="english">English</p>
+                                                <img src="/media/icons/united-states-flag-icon.svg" alt="">
+                                            </li>
+                                            <li class="dropdown-item" data-lang="es">
+                                                <p class="espanol">Español</p>
+                                                <img src="/media/icons/spain-country-flag-icon.svg" alt="">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </header>
     
                 <section class="project-form-section | text-neutral-100">
                 <div class="project-container">
                         <div class="left-section">
-                            <h1>Diseña tu propio proyecto</h1>
-                            <p style="color: #ffdc53; font-weight:600; ">Tu energía, tu diseño.</p>
+                            <h1 data-translate="projectTitle">Diseña tu propio proyecto</h1>
+                            <p data-translate="projectSubtitle" style="color: #ffdc53; font-weight:600; ">Tu energía, tu diseño.</p>
                             
                         </div>
                         <div class="right-section">
-                            <h2>PROYECTE SU NUEVO SISTEMA SOLAR</h2>
-                            <p> <span style="font-weight: bolder;">+(909) 697-6932</span><br>
-                            INGRESA TUS DATOS Y TE CONTACTAMOS</p>
+                            <h2 data-translate="formTitle">PROYECTE SU NUEVO SISTEMA SOLAR</h2>
+                            <p data-translate="formSubitle" >INGRESA TUS DATOS Y TE CONTACTAMOS</p>
                             <form id="projectForm" class="form-grid">
-                                <input type="text" placeholder="Nombre">
-                                <input type="text" placeholder="Apellido">
-                                <input type="email" placeholder="Email">
-                                <input type="tel" placeholder="Teléfono">
-                                <input type="text" placeholder="Domicilio">
-                                <input type="text" placeholder="Ciudad">
-                                <input type="text" placeholder="Monto de Factura Eléctrica Mensual">
-                                <input type="text" placeholder="Kilowatts Mensuales (opcional)">
+                                <input type="text" data-translate="namePlaceholder" placeholder="Nombre" autocomplete="name" required>
+                                <input type="text" data-translate="surnamePlaceholder" placeholder="Apellido" autocomplete="additional-name" required>
+                                <input type="email" data-translate="emailPlaceholder" placeholder="Email" autocomplete="email" required>
+                                <input type="tel" data-translate="phonePlaceholder" placeholder="Teléfono" autocomplete="tel" required>
+                                <input type="text" data-translate="addressPlaceholder" placeholder="Domicilio" autocomplete="address-line1">
+                                <input type="text" data-translate="cityPlaceholder" placeholder="Ciudad" required>
+                                <input type="text" data-translate="monthlyBillPlaceholder" placeholder="Monto de Factura Eléctrica Mensual">
+                                <input type="text" data-translate="monthlyKwhPlaceholder" placeholder="Kilowatts Mensuales (opcional)">
+    
                                 
                                 <div style="position: relative; grid-column: span 2;">
-                                    <input type="checkbox" id="terms">
-                                    <label for="terms">Estoy de acuerdo con los términos y condiciones</label>
-                                    <div id="labelBox" class="label-box">
+                                    <input name="check" type="checkbox" id="terms">
+                                    <label for="terms" data-translate="agreeTerms">Estoy de acuerdo con los términos y condiciones</label>
+                                    <div data-translate="termsInfo" id="labelBox" class="label-box">
                                         Al enviar este formulario, usted acepta que sus datos personales sean utilizados para proporcionarle información sobre productos y servicios de energía solar, y realizar un seguimiento de su solicitud. Nos comprometemos a proteger su privacidad, no compartiendo sus datos con terceros sin su consentimiento. Usted puede solicitar acceso, modificación o eliminación de sus datos en cualquier momento.
                                     </div>
                                 </div>
-                                <button type="submit" class="secondary-button project-btn" style="grid-column: span 2;">ENVIAR</button>
+                                <button data-translate="submitButton" type="submit" class="secondary-button project-btn" style="grid-column: span 2;">ENVIAR</button>
                             </form>
                         </div>
                     </div> 
@@ -79,12 +91,12 @@
 
         <section class="padding-block-300 bg-neutral-100 text-neutral-100"></section>
             <div class="info-card project-info bg-primary-900">
-                <h2 class="fs-secondary-heading padding-block-200 fw-bold" >
+                <h2 data-translate="infoTitle" class="fs-secondary-heading padding-block-200 fw-bold" >
                     ¿POR QUÉ NECESITAMOS <SPAN style="color: #ffdc53;">ESTOS DATOS</SPAN>?
                 </h2>
                 <div class="text-infor">
                     <div>
-                        <p>
+                        <p data-translate="infoText">
                             Con esta información, podemos elaborar un presupuesto mas preciso y desarrollar una solución solar que se ajuste a su consumo actual. Además, estos datos nos permiten contactar con usted de manera efectiva, asegurando un seguimiento adecuado de su solicitud, y brindarle asesoramiento especializado para que tome decisiones informadas. Nuestro objetivo es ofrecerle un servicio eficiente y a medida, garantizando que reciba la mejor solución solar para su hogar.
                         </p>
                     </div>
@@ -102,12 +114,12 @@
                 
                 <div class="footer-col">
                   <h2 style="color:white">Jose<span class="highlight">Solares</span></h2>
-                  <p>Convertimos tu valor en energía eficiente<br> y rentable para tu hogar.</p>
+                  <p data-translate="footerTitle">Convertimos tu valor en energía eficiente<br> y rentable para tu hogar.</p>
                 </div>
           
             
                 <div class="footer-col">
-                  <h3>Contacto</h3>
+                  <h3 data-translate="footerContact">Contacto</h3>
                   <p>Tel: (909) 697-6932</p>
                   <a href="mailto:jcastorre@gmail.com">jcastorre@gmail.com</a>
                   <div class="social-icons">
@@ -119,15 +131,15 @@
           
             
                 <div class="footer-col">
-                  <h3>Acceso</h3>
+                  <h3 data-translate="footerLinks">Acceso</h3>
                    
                     <ul class="link-list custom-arrows">    
-                        <li><a href="/views/us-page.html">Nosotros</a></li>
-                        <li><a href="/views/info.html">Información</a></li>
-                        <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/views/info.html#faqSection">Preguntas frecuentes</a></li>
-                        <li><a href="/views/info.html#edContent">Contenido educativo</a></li>
-                        <li><a href="/views/project.html">Crea Tu proyecto</a></li>
+                        <li><a data-translate="footerItem1" href="/views/us-page.html">Nosotros</a></li>
+                        <li><a data-translate="footerItem2" href="/views/info.html">Información</a></li>
+                        <li><a data-translate="footerItem3" href="/index.html">Inicio</a></li>
+                        <li><a data-translate="footerItem4" href="/views/info.html#faqSection">Preguntas frecuentes</a></li>
+                        <li><a data-translate="footerItem5" href="/views/info.html#edContent">Contenido educativo</a></li>
+                        <li><a data-translate="footerItem6" href="/views/project.html">Crea Tu proyecto</a></li>
                     </ul>
                   
                 </div>
@@ -136,15 +148,23 @@
 
         <section class="padding-block-300">
             <div class="copyright ">
-                <p>Jose Luis Castro Your Solar and Real Estate Professional</p>
-                <p>Copyright josesolares - 2024. Todos los derechos reservados. Defensa de las y los consumidores.</p>   
+                <p data-translate="footerText">2024 | JoseSolares | Todos los derechos reservados</p> 
             </div>
         </section>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
+        <!-- Modal Structure -->
+        <div id="customModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage">Your message here</p>
+            </div>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/scripts/project.js"></script>
-        <script src="/scripts/main.js" async defer></script>
+        <script src="/scripts/main.js" defer></script>
+        <script type="module" src="/scripts/projectSubmit.js" defer></script>
+        <script type="module" src="/scripts/translateProject.js" defer></script>
     </body>
 </html>
