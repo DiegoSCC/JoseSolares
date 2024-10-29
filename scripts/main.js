@@ -68,7 +68,7 @@ async function submitForm(event) {
   };
 
   try {
-    const response = await fetch('http://206.189.254.107:3000/submit-form', { // Use full URL
+    const response = await fetch('https://backend.api.solarbyjose.com:3000/submit-form', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
