@@ -49,7 +49,10 @@
     "copyrightText": "2024 | JoseSolares | All rights reserved",
     "namePlaceholder": "Name",
     "messagePlaceholder": "Message",
-    "emailPlaceholder": "Email"
+    "emailPlaceholder": "Email",
+    "carouselPhrase1": "RENEWABLE ENERGY <br><span style='font-weight: bold; color: #fde06c;'>IN YOUR HOME</span>",
+    "carouselPhrase2": "SAVE TODAY <br><span style='font-weight: bold; color: #fde06c;'>LIVE BETTER TOMORROW</span>",
+    "carouselPhrase3": ">LESS COSTS <br><span style='font-weight: bold; color: #fde06c;'>MORE INDEPENDENCE</span>"
   },
   "es": {
     "home": "INICIO",
@@ -80,7 +83,7 @@
     "review1": "“José Castro fue el mejor en responder todas mis preguntas y evitó que alguien intentara estafarme para que alquilara y no comprara mi sistema solar. Necesitamos más personas honestas como él. ¡Gracias por toda su ayuda, la aprecio mucho!",
     "review2": "Me gustaría reconocer a José, quien me salvó de contratar a otra empresa de energía solar. Es rápido y eficiente, me acompaño en cada paso del proceso. Excelente servicio al cliente y confiable. No solo le doy una excelente reseña, sino que también le doy un 199 %. Me dio la tranquilidad de poder hacerle 101 preguntas... su negocio es increíble. ",
     "review3": "José Castro es mi representante, estoy muy contento con su desempeño, gran servicio, siempre presente y rápido para responder todas mis preguntas a mi entera satisfacción. Mi experiencia con Solar fue fácil y rápida, seguramente lo recomendaré a todos mis amigos y familiares. ¡Buen trabajo! @Jose gracias por toda tu ayuda y apoyo.",
-    "promoTitle": "Tenes dudas? Lee nuestro libro!",
+    "promoTitle": "No compres paneles sin leer nuestro libro primero",
     "promoSubtitle": "Libro educativo sobre paneles solares",
     "promoText": "Cargando tus datos te enviamos nuestro libro gratis sin costo.",
     "contactTitle": "Contactanos",
@@ -98,6 +101,10 @@
     "copyrightText": "2024 | JoseSolares | Todos los derechos reservados",
     "namePlaceholder": "Nombre",
     "messagePlaceholder": "Mensaje",
-    "emailPlaceholder": "Correo"
+    "emailPlaceholder": "Correo",
+    "phonePlaceholder": "Telefono",
+    "carouselPhrase1": "ENERGÍA RENOVABLE <br><span style='font-weight: bold; color: #fde06c;'>EN TU VIVIENDA</span>",
+    "carouselPhrase2": "AHORRA HOY <br><span style='font-weight: bold; color: #fde06c;'>VIVE MEJOR MAÑANA</span>",
+    "carouselPhrase3": ">MENOS COSTOS <br><span style='font-weight: bold; color: #fde06c;'>MÁS INDEPENDENCIA</span>"
   }
 }

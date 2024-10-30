@@ -62,6 +62,19 @@
         "faqAnswer6": "Solar energy systems can last 25 to 35 years, and removing and reinstalling panels can be costly if you need to replace your roof. If your roof needs maintenance soon, you should do it before finalizing your solar installation. Our solar installers can tell you if you need to replace your roof before going solar. Some installers on our platform even have roofing companies they regularly work with for homeowners needing roof replacements before installing solar panels.",
         "faqQuestion7": "How long will my solar energy system last?",
         "faqAnswer7": "Solar panels are generally very durable and able to withstand snow, wind, and hail. The various components of your solar energy system will need to be replaced at different times, but your system should continue generating electricity for 25 to 35 years.",
+        "faqQuestion8": "What are the environmental benefits of solar energy? ",
+        "faqAnswer8": "Like other renewable energy resources, solar power has many environmental and health benefits. Going solar reduces greenhouse gas emissions, which contribute to climate change, and results in fewer air pollutants like sulfur dioxide and particulate matter, which can cause health problems.",
+        "faqQuestion9": "How do I find out how much I pay for electricity?",
+        "faqAnswer9": "The easiest way to find out how much you pay for electricity (and how much electricity you use per month) is to take a look at your utility electricity bill—Review our educational book to reading your electricity bill to find out exactly what to look for.",
+        "faqQuestion10": "How does solar impact my property values?",
+        "faqAnswer10": "Studies have shown that homes with solar energy systems sell for more than homes without them. However, your property value will only increase if you own, rather than lease, your solar panel system. Going solar will increase your property value more than a kitchen renovation in most parts of the country. We covered everything you need to know about selling your house with solar and the most important questions to ask your real estate agent before selling your home with solar panels.",
+        "faqQuestion11": "Do my solar panels produce power when the sun isn't shining?",
+        "faqAnswer11": "The amount of power your solar energy system can generate depends on sunlight. As a result, your solar panels will produce slightly less energy when the weather is cloudy and no energy at night. However, because of high electricity costs and financial incentives, solar is smart even if you live in a cloudy city.",
+        "faqQuestion12": " Will I still receive an electric bill if I have solar panels?",
+        "faqAnswer12": "Solar panels are generally very durable and able to withstand snow, wind, and hail. The various components of your solar energy system will need to be replaced at different times, but your system should continue generating electricity for 25 to 35 years.",
+        "faqQuestion13": "How long will my solar energy system last?",
+        "faqAnswer13": "Unless your solar energy system includes battery storage and you are fully off the grid, you will still receive a bill from your utility. However, you can dramatically reduce your bill or even cut the amount you owe to $0 with a solar panel system that matches your energy use.",
+        
         "contactTitle": "CONTACT US",
         "contactBanner": "For inquiries or meetings, contact us at:",
         "contactButton": "SEND",
@@ -77,7 +90,8 @@
         "copyrightText": "2024 | JoseSolares | All rights reserved",
         "namePlaceholder": "Name",
         "messagePlaceholder": "Message",
-        "emailPlaceholder": "Email"
+        "emailPlaceholder": "Email",
+        "phonePlaceholder": "Phone Number"
     },
     "es": {
         "home": "INICIO",
@@ -142,6 +156,18 @@
         "faqAnswer6": "Los sistemas de energía solar pueden durar de 25 a 35 años, y quitar e reinstalar los paneles puede ser costoso si necesitas reemplazar tu techo. Si tu techo necesita mantenimiento pronto, deberías hacerlo antes de finalizar tu instalación solar. Nuestros instaladores solares podrán indicarte si debes reemplazar tu techo antes de optar por la energía solar. Algunos de los instaladores en nuestra plataforma incluso tienen empresas de techado con las que trabajan regularmente para los propietarios que necesitan reemplazar sus techos antes de instalar paneles solares.",
         "faqQuestion7": "¿Cuánto tiempo durará mi sistema de energía solar?",
         "faqAnswer7": "Los paneles solares son generalmente muy duraderos y capaces de soportar nieve, viento y granizo. Los diversos componentes de su sistema de energía solar necesitarán ser reemplazados en diferentes momentos, pero su sistema debería continuar generando electricidad durante 25 a 35 años.",
+        "faqQuestion8": " ¿Cuánto tiempo durará mi sistema de energía solar?",
+        "faqAnswer8": "Los paneles solares son generalmente muy duraderos y capaces de soportar nieve, viento y granizo. Los diversos componentes de su sistema de energía solar necesitarán ser reemplazados en diferentes momentos, pero su sistema debería continuar generando electricidad durante 25 a 35 años.",
+        "faqQuestion9": "¿Cuáles son los beneficios ambientales de la energía solar?",
+        "faqAnswer9": "Al igual que otros recursos de energía renovable, la energía solar tiene muchos beneficios ambientales y para la salud. Pasar a energía solar reduce las emisiones de gases de efecto invernadero, que contribuyen al cambio climático, y resulta en menos contaminantes del aire como el dióxido de azufre y las partículas en suspensión, que pueden causar problemas de salud.",
+        "faqQuestion10": "¿Cómo puedo averiguar cuánto pago por electricidad?",
+        "faqAnswer10": "La forma más fácil de averiguar cuánto pagas por electricidad (y cuánta electricidad utilizas al mes) es revisar tu factura de electricidad del servicio público. Consulta nuestro libro informativo sobre cómo leer tu factura de electricidad para saber exactamente qué buscar.",
+        "faqQuestion11": "¿Cómo impacta la energía solar en el valor de mi propiedad?",
+        "faqAnswer11": "Los estudios han demostrado que las casas con sistemas de energía solar se venden por más que las casas sin ellos. Pasar a energía solar aumentará el valor de tu propiedad más que una renovación de cocina en la mayoría de las partes del país. Cubrimos todo lo que necesitas saber sobre la venta de tu casa con energía solar y las preguntas más importantes que debes hacer a tu agente inmobiliario antes de vender tu casa con paneles solares.",
+        "faqQuestion12": "¿Producen energía mis paneles solares cuando no hay sol?",
+        "faqAnswer12": "La cantidad de energía que puede generar tu sistema de energía solar depende de la luz solar. Como resultado, tus paneles solares producirán ligeramente menos energía cuando el clima está nublado y no generarán energía por la noche. Sin embargo, debido a los altos costos de electricidad y los incentivos financieros, la energía solar es una opción inteligente incluso si vives en una ciudad nublada.",
+        "faqQuestion13": " ¿Seguiré recibiendo una factura eléctrica si tengo paneles solares?",
+        "faqAnswer13": "A menos que tu sistema de energía solar incluya almacenamiento de baterías y estés completamente desconectado de la red, seguirás recibiendo una factura de tu compañía de servicios públicos. Sin embargo, puedes reducir drásticamente tu factura o incluso reducir el monto que debes a $0 con un sistema de paneles solares que se ajuste a tu consumo de energía.",
         "contactTitle": "Contactanos",
         "contactBanner": "Para consultas o reuniones escribinos al:",
         "contactButton": "ENVIAR",
@@ -157,6 +183,7 @@
         "copyrightText": "2024 | JoseSolares | Todos los derechos reservados",
         "namePlaceholder": "Nombre",
         "messagePlaceholder": "Mensaje",
-        "emailPlaceholder": "Correo"
+        "emailPlaceholder": "Correo",
+        "phonePlaceholder": "Telefono"
     }
 }

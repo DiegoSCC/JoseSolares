@@ -539,6 +539,16 @@ select {
   bottom: -16px;
 }
 
+.carousel-phrases{
+  left: 35%;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: start;
+}
+
 .carousel-indicators [data-bs-target] {
   width: 12px; /* Set a fixed width to create a circle */
   height: 12px; /* Set equal height to match the width */
@@ -1007,8 +1017,7 @@ select {
   margin-bottom: 20px;
 }
 
-.input-group-form input,
-textarea {
+.input-group-form input {
   width: 100%;
   padding: 10px;
   border: none;
@@ -1021,9 +1030,20 @@ textarea {
   border-radius: 8px 8px 8px 8px;
 }
 
-textarea {
+.messageForm {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: rgb(253, 253, 253);
+  margin-left: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-radius: 8px 8px 8px 8px;
   resize: none;
   height: 100px;
+
 }
 
 .form-button{

@@ -441,7 +441,7 @@ h3 {
 }
 
 .input-group-form input,
-textarea{
+.messageForm{
     border: 1px solid var(--clr-primary-900);
     background-color: var(--clr-neutral-100);
     color: #333;
@@ -587,6 +587,10 @@ ul.custom-rectangle li::before {
     background-color: grey;
     border: 1px transparent;
     border-radius: 10px;
+}
+
+.carousel-indicators .active{
+    transform: none;
 }
 
 .carousel-indicators {
