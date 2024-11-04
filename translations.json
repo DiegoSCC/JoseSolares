@@ -7,7 +7,7 @@
     "heroTitle": "Let every sunbeam work for you",
     "heroSubtitle": "Save Smart.",
     "ctaButton": "START NOW",
-    "whySaveTitle": "Why Save with Solar Panels?",
+    "whySaveTitle": "WHY SAVE WITH SOLAR PANELS?",
     "savingsProtection": "Protect Against Increases",
     "energySavings": "Energy Savings",
     "energyResilience": "Energy Resilience",
@@ -17,7 +17,7 @@
     "aboutTitle": "WHO WE ARE",
     "aboutDescription": "Our mission is to provide exceptional service in solar energy solutions, reflecting our commitment to quality and innovation. We focus on understanding the individual needs of each client to provide efficient and sustainable solar solutions.",
     "aboutButton": "LEARN MORE",
-    "whyUsTitle": "WHY SHOULD YOU CHOOSE US?",
+    "whyUsTitle": "<span>¿WHY SHOULD YOU</span> CHOOSE US?",
     "trustBuilding": "Building Trust, Delivering Results",
     "experienceDescription": "With years of experience, our team offers solar solutions tailored to your needs. We provide high-quality products with advanced technology, promoting a sustainable future and a service based on integrity and transparency.",
     "helpingFamilies": "Helping around <br> +170 families each year",
@@ -49,10 +49,11 @@
     "copyrightText": "2024 | JoseSolares | All rights reserved",
     "namePlaceholder": "Name",
     "messagePlaceholder": "Message",
-    "emailPlaceholder": "Email",
+    "phonePlaceholder": "Phone Number",
     "carouselPhrase1": "RENEWABLE ENERGY <br><span style='font-weight: bold; color: #fde06c;'>IN YOUR HOME</span>",
     "carouselPhrase2": "SAVE TODAY <br><span style='font-weight: bold; color: #fde06c;'>LIVE BETTER TOMORROW</span>",
-    "carouselPhrase3": ">LESS COSTS <br><span style='font-weight: bold; color: #fde06c;'>MORE INDEPENDENCE</span>"
+    "carouselPhrase3": "LESS COSTS <br><span style='font-weight: bold; color: #fde06c;'>MORE INDEPENDENCE</span>",
+    "moreReviews": "SEE MORE"
   },
   "es": {
     "home": "INICIO",
@@ -62,14 +63,14 @@
     "heroTitle": "Haz que cada rayo cuente",
     "heroSubtitle": "Ahorra de manera inteligente",
     "ctaButton": "COMIENZA YA",
-    "whySaveTitle": "¿Por qué ahorrar con paneles solares?",
+    "whySaveTitle": "¿POR QUÉ AHORRAR CON PANELES SOLARES?",
     "savingsProtection": "Protégete contra los incrementos",
     "energySavings": "Ahorro de energía",
     "energyResilience": "Resiliencia energética",
     "aboutTitle": "QUIÉNES SOMOS",
     "aboutDescription": "Nuestra misión es ofrecer un servicio excepcional en soluciones de energía solar, reflejando nuestro compromiso con la calidad y la innovación. Nos enfocamos en entender las necesidades individuales de cada cliente para proporcionar soluciones solares eficientes y sostenibles.",
     "aboutButton": "CONOCE MÁS",
-    "whyUsTitle": "¿POR QUÉ NOSOTROS?",
+    "whyUsTitle": "<span>¿POR QUÉ</span> NOSOTROS?",
     "trustBuilding": "Construyendo confianza, entregando resultados",
     "experienceDescription": "Con años de experiencia, nuestro equipo ofrece soluciones solares adaptadas a tus necesidades. Proporcionamos productos de alta calidad con tecnología avanzada, promoviendo un futuro sostenible y un servicio basado en integridad y transparencia.",
     "helpingFamilies": "Ayudamos alrededor de <br> +170 familias cada año",
@@ -86,7 +87,7 @@
     "promoTitle": "No compres paneles sin leer nuestro libro primero",
     "promoSubtitle": "Libro educativo sobre paneles solares",
     "promoText": "Cargando tus datos te enviamos nuestro libro gratis sin costo.",
-    "contactTitle": "Contactanos",
+    "contactTitle": "CONTACTANOS",
     "contactBanner": "Para consultas o reuniones escribinos al:",
     "contactButton": "ENVIAR",
     "footerTitle": "Convertimos tu valor en energía eficiente<br> y rentable para tu hogar.",
@@ -105,6 +106,7 @@
     "phonePlaceholder": "Telefono",
     "carouselPhrase1": "ENERGÍA RENOVABLE <br><span style='font-weight: bold; color: #fde06c;'>EN TU VIVIENDA</span>",
     "carouselPhrase2": "AHORRA HOY <br><span style='font-weight: bold; color: #fde06c;'>VIVE MEJOR MAÑANA</span>",
-    "carouselPhrase3": ">MENOS COSTOS <br><span style='font-weight: bold; color: #fde06c;'>MÁS INDEPENDENCIA</span>"
+    "carouselPhrase3": "MENOS COSTOS <br><span style='font-weight: bold; color: #fde06c;'>MÁS INDEPENDENCIA</span>",
+    "moreReviews": "VER MÁS"
   }
 }

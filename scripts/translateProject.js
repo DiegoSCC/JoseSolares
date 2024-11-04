@@ -79,6 +79,13 @@ document.addEventListener('DOMContentLoaded', function (){
                               input.placeholder = translations[lang][placeholderKey]; // Update the placeholder
                           }
                       });
+                      const textElements = document.querySelectorAll('input[data-translate]');
+                      textElements.forEach(textarea => {
+                          const placeholderKey = textarea.getAttribute('data-translate'); // Get the key from data-translate
+                          if (translations[lang][placeholderKey]) {
+                              textarea.placeholder = translations[lang][placeholderKey]; // Update the placeholder
+                          }
+                      });
                       
                     
 

@@ -540,6 +540,7 @@ select {
 }
 
 .carousel-phrases{
+  position: absolute;
   left: 35%;
   bottom: 50%;
   transform: translateY(50%);
@@ -547,6 +548,10 @@ select {
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: start;
+}
+
+.carousel-phrases h3{
+  font-size: 32px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -848,10 +853,8 @@ select {
   padding: 4rem 1rem 5rem;
 }
 
-.reviewsButton {
-  margin-left: auto;
-  text-align: end;
-  margin-right: 1rem;
+.reviewsButton{
+  text-align: center;
 }
 
 .review-box {
